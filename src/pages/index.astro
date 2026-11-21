@@ -2,18 +2,22 @@
 import Base from '../layouts/Base.astro';
 import { topics, featuredArticles, relatedSiteGroups } from '../lib/site.mjs';
 import { normalizeLink, getArticles } from '../lib/content.mjs';
-const count = getArticles().length;
+const articles = getArticles();
+const count = articles.length;
+const recent = [...articles]
+  .sort((a, b) => (b.date || '').localeCompare(a.date || ''))
+  .slice(0, 3);
 ---
 
 <Base>
   <main class="knowledge-home" id="main-content">
     <section class="home-intro" aria-labelledby="home-title">
       <div class="intro-copy">
-        <p class="home-eyebrow">开发 · 记录 · 分享</p>
-        <h1 id="home-title">Wulicode</h1>
-        <p class="intro-subtitle">相互关联，相互对比</p>
+        <p class="home-eyebrow">WULICODE · 技术分享</p>
+        <h1 id="home-title">开发实践与技术笔记</h1>
+        <p class="intro-subtitle">从语言基础到工程实践</p>
         <p class="intro-description">
-          开发笔记、技术资料与实践记录。生命不息，学习不止。
+          整理后端、前端、数据库、运维与 AI 开发中的知识和经验。
         </p>
         <div class="intro-actions">
           <a class="home-button primary" href="#knowledge-topics">
@@ -24,6 +28,32 @@ const count = getArticles().length;
           </a>
         </div>
       </div>
+      <aside class="intro-journal" aria-label="最近更新">
+        <div class="journal-heading">
+          <span>最近更新</span>
+          <a href="/rss.xml" aria-label="订阅 RSS">
+            RSS ↗
+          </a>
+        </div>
+        {recent.map((article, index) => (
+          <a class="journal-entry" href={article.url}>
+            <span class="journal-number">0{index + 1}</span>
+            <div>
+              <p>{article.category}</p>
+              <h2>{article.title}</h2>
+            </div>
+            <span aria-hidden="true">↗</span>
+          </a>
+        ))}
+        <div class="journal-footer">
+          <span>
+            <strong>{count}</strong> 篇笔记
+          </span>
+          <span>
+            <strong>{topics.length}</strong> 个技术方向
+          </span>
+        </div>
+      </aside>
     </section>
     <section
       id="knowledge-topics"
@@ -31,10 +61,14 @@ const count = getArticles().length;
       aria-labelledby="topics-title"
     >
       <div class="home-section-heading">
-        <h2 id="topics-title">技术分类</h2>
+        <div>
+          <p class="section-kicker">EXPLORE</p>
+          <h2 id="topics-title">沿着兴趣，深入一点</h2>
+        </div>
+        <p class="section-description">从语言基础到工程实践，按方向探索。</p>
       </div>
       <div class="topic-grid">
-        {topics.map((topic) => (
+        {topics.map((topic, index) => (
           <a class="topic-card" href={normalizeLink(topic.link)}>
             <div class="topic-card-top">
               <span class="topic-icon">
@@ -52,28 +86,39 @@ const count = getArticles().length;
                   <path d={topic.icon} />
                 </svg>
               </span>
-              <span class="topic-arrow" aria-hidden="true">
-                →
+              <span class="topic-number" aria-hidden="true">
+                0{index + 1}
               </span>
             </div>
             <h3>{topic.title}</h3>
             <p class="topic-description">{topic.description}</p>
-            <p class="topic-tags">{topic.tags}</p>
+            <p class="topic-tags">
+              <span>{topic.tags}</span>
+              <span class="topic-arrow" aria-hidden="true">
+                ↗
+              </span>
+            </p>
           </a>
         ))}
       </div>
     </section>
     <section class="reading-section" aria-labelledby="reading-title">
       <div class="home-section-heading">
-        <h2 id="reading-title">精选笔记</h2>
+        <div>
+          <p class="section-kicker">SELECTED NOTES</p>
+          <h2 id="reading-title">值得再读的笔记</h2>
+        </div>
         <a class="all-articles" href="/articles.html">
           全部文章 ↗
         </a>
       </div>
       <div class="reading-grid">
-        {featuredArticles.map((article) => (
+        {featuredArticles.map((article, index) => (
           <a class="reading-card" href={normalizeLink(article.link)}>
-            <p class="reading-tag">{article.tag}</p>
+            <div class="reading-card-top">
+              <p class="reading-tag">{article.tag}</p>
+              <span aria-hidden="true">0{index + 1}</span>
+            </div>
             <h3>{article.title}</h3>
             <p>{article.description}</p>
             <span class="reading-link">
