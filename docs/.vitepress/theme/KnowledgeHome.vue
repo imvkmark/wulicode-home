@@ -58,5 +58,20 @@ const articles = [
                 </a>
             </div>
         </section>
+        <div class="home-related">
+            <span>相关站点</span>
+            <a href="https://maxiaoxi.com" target="_blank" rel="noopener noreferrer">
+                maxiaoxi.com <span aria-hidden="true">↗</span>
+                <span class="visually-hidden">（在新标签页打开）</span>
+            </a>
+            <a href="https://weiran.wulicode.com" target="_blank" rel="noopener noreferrer">
+                weiran.wulicode.com <span aria-hidden="true">↗</span>
+                <span class="visually-hidden">（在新标签页打开）</span>
+            </a>
+            <a href="https://wuli3.wulicode.com" target="_blank" rel="noopener noreferrer">
+                wuli3.wulicode.com <span aria-hidden="true">↗</span>
+                <span class="visually-hidden">（在新标签页打开）</span>
+            </a>
+        </div>
     </main>
 </template>
