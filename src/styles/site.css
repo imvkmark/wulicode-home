@@ -95,11 +95,11 @@ button {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+  font-family: var(--vp-font-family-base);
   font-size: 23px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1;
-  letter-spacing: normal;
+  letter-spacing: 0.025em;
   flex-shrink: 0;
 }
 .site-brand img {

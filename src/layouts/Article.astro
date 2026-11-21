@@ -78,7 +78,6 @@ const readingTime = Math.max(
                   <li>
                     <a
                       href={article.url}
-                      title={article.title}
                       aria-current={article.id === page.id ? 'page' : undefined}
                     >
                       <Icon name="FileText" size={13} />
@@ -381,9 +380,14 @@ const readingTime = Math.max(
       tooltipLink?.removeAttribute('aria-describedby');
       tooltipLink = undefined;
     };
-    for (const link of links) {
+    const tooltipLinks = [
+      ...links,
+      ...document.querySelectorAll<HTMLAnchorElement>('.sidebar-group a'),
+    ];
+    for (const link of tooltipLinks) {
       const showTooltip = () => {
-        if (!tooltip || link.scrollWidth <= link.clientWidth) return;
+        const text = link.querySelector('span') || link;
+        if (!tooltip || text.scrollWidth <= text.clientWidth) return;
         hideOutlineTooltip();
         tooltipLink = link;
         tooltip.textContent = link.textContent?.trim() || '';
