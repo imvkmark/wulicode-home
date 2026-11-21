@@ -1,28 +1,12 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
-layout : home
-
-hero :
-  name : "Wulicode"
-  text : "相互关联, 相互对比"
-  tagline : 生命不息, 学习不止
-  actions :
-    -
-      theme : brand
-      text : Java
-      link : /back-end/java/
-    -
-      theme : alt
-      text : App
-      link : /front-end/app/
-
-features :
-  -
-    icon : 🪨
-    title : 语言
-    details : 各种语言的学习笔记, 以点带面, MOVING ON
-  -
-    icon : ⚒️
-    title : 开发
-    details : 语言的目的是为了开发, 开发的目的是为了项目
+layout: home
+title: Wulicode · 技术学习笔记
+description: Wulicode 开发笔记与技术资料，涵盖后端、前端、数据库、运维工具及设计实践。
+markdownStyles: false
 ---
+
+<script setup>
+import KnowledgeHome from './.vitepress/theme/KnowledgeHome.vue'
+</script>
+
+<KnowledgeHome />

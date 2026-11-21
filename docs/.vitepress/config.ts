@@ -97,6 +97,7 @@ const nav = [
 
 
 const vitePressConfig = {
+    lang: 'zh-CN',
     title: "Wulicode",
     description: "Wulicode 知识学习站",
     head: [
@@ -122,7 +123,7 @@ const vitePressConfig = {
     },
     themeConfig: {
         logo: 'https://file.wulicode.com/static/images/logo.png',
-        siteTitle: false,
+        siteTitle: 'Wulicode',
         outline: {
             level: 'deep',
             label: '大纲'
@@ -140,7 +141,7 @@ const vitePressConfig = {
             }
         },
         nav,
-        socialLinks: [{ icon: "github", link: "https://github.com/imvkmark/get-started" }],
+        socialLinks: [{ icon: "github", link: "https://github.com/imvkmark/wulicode-home" }],
         footer: {
             message: 'Released under the CC License.<a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">鲁ICP备13016276号-7</a>',
             copyright: 'Copyright © 2015-present 多厘'
@@ -154,6 +155,15 @@ const vitePressSidebarOptions = {
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig(withSidebar(vitePressConfig, [
+    {
+        documentRootPath: 'docs/',
+        collapsed: false,
+        scanStartPath: 'design',
+        basePath: '/design/',
+        resolvePath: '/design/',
+        useTitleFromFileHeading: true,
+        sortFolderTo: 'bottom',
+    },
     {
         documentRootPath: 'docs/',
         collapsed: false,

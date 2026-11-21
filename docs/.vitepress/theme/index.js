@@ -1,4 +1,5 @@
 import DefaultTheme from 'vitepress/theme';
+import './custom.css';
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 import 'viewerjs/dist/viewer.min.css';
 import imageViewer from 'vitepress-plugin-image-viewer';
@@ -16,7 +17,7 @@ export default {
 
         // Obtain configuration from: https://giscus.app/
         giscusTalk({
-            repo: 'imvkmark/get-started',
+            repo: 'imvkmark/wulicode-home',
             repoId: 'R_kgDOJfaw1A',
             categoryId: 'DIC_kwDOJfaw1M4CW2uA',
             mapping: 'title', // default: `pathname`
