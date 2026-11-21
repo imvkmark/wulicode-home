@@ -24,6 +24,7 @@
     "@astrojs/sitemap": "^3.7.6",
     "@docsearch/css": "^5.2.0",
     "@docsearch/js": "^5.2.0",
+    "@lucide/astro": "^1.77.0",
     "astro": "^7.4.13",
     "markdown-it-anchor": "^10.1.0",
     "markdown-it-container": "^4.0.0",

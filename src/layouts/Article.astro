@@ -1,5 +1,6 @@
 ---
 import Base from './Base.astro';
+import Icon from '../components/Icon.astro';
 import {
   getArticles,
   getSidebar,
@@ -56,7 +57,7 @@ const readingTime = Math.max(
     <aside class="article-sidebar" aria-label="文章导航">
       <details class="sidebar-panel" open>
         <summary>
-          文章导航 <span aria-hidden="true">⌄</span>
+          文章导航 <Icon name="ChevronDown" size={14} />
         </summary>
         <nav>
           <a class="sidebar-overview" href={`/${scope}/`}>
@@ -68,15 +69,20 @@ const readingTime = Math.max(
               class="sidebar-group"
               open={group.articles.some((article) => article.id === page.id)}
             >
-              <summary>{group.title}</summary>
+              <summary>
+                <Icon name="ChevronRight" size={12} />
+                {group.title}
+              </summary>
               <ul>
                 {group.articles.map((article) => (
                   <li>
                     <a
                       href={article.url}
+                      title={article.title}
                       aria-current={article.id === page.id ? 'page' : undefined}
                     >
-                      {article.title}
+                      <Icon name="FileText" size={13} />
+                      <span>{article.title}</span>
                     </a>
                   </li>
                 ))}
@@ -91,15 +97,15 @@ const readingTime = Math.max(
         <a href="/">首页</a>
         {breadcrumbs.map((crumb) => (
           <>
-            <span aria-hidden="true">/</span>
+            <Icon name="ChevronRight" size={11} />
             <a href={crumb.url}>{crumb.title}</a>
           </>
         ))}
       </nav>
       <header class="article-header vp-doc">
-        <p class="article-category">{page.category}</p>
         <h1>{page.title}</h1>
         <div class="article-meta">
+          <span class="article-category">{page.category}</span>
           {date && (
             <span>
               最后更新 <time datetime={page.date}>{date}</time>
@@ -136,7 +142,9 @@ const readingTime = Math.max(
         <nav class="article-pager" aria-label="相邻文章">
           {prev ? (
             <a href={prev.url}>
-              <span>上一篇</span>
+              <span>
+                <Icon name="ArrowLeft" size={13} /> 上一篇
+              </span>
               <strong>{prev.title}</strong>
             </a>
           ) : (
@@ -144,7 +152,9 @@ const readingTime = Math.max(
           )}
           {next && (
             <a href={next.url}>
-              <span>下一篇</span>
+              <span>
+                下一篇 <Icon name="ArrowRight" size={13} />
+              </span>
               <strong>{next.title}</strong>
             </a>
           )}
@@ -172,16 +182,138 @@ const readingTime = Math.max(
       </aside>
     )}
   </div>
+  <div class="article-floating-nav">
+    <button
+      class="floating-nav-button floating-articles"
+      type="button"
+      aria-label="打开文章导航"
+      aria-haspopup="dialog"
+      aria-controls="article-navigation-dialog"
+      title="文章导航"
+    >
+      <Icon name="ListTree" size={21} />
+    </button>
+    {headings.length > 0 && (
+      <button
+        class="floating-nav-button floating-outline"
+        type="button"
+        aria-label="打开本页目录"
+        aria-haspopup="dialog"
+        aria-controls="page-outline-dialog"
+        title="本页目录"
+      >
+        <Icon name="List" size={21} />
+      </button>
+    )}
+  </div>
+  <dialog
+    id="article-navigation-dialog"
+    class="navigation-dialog"
+    aria-labelledby="article-navigation-title"
+  >
+    <div class="navigation-dialog-header">
+      <h2 id="article-navigation-title">文章导航</h2>
+      <button type="button" class="close-navigation" aria-label="关闭文章导航">
+        <Icon name="X" size={20} />
+      </button>
+    </div>
+    <div class="mobile-nav-content"></div>
+  </dialog>
+  {headings.length > 0 && (
+    <dialog
+      id="page-outline-dialog"
+      class="navigation-dialog"
+      aria-labelledby="page-outline-title"
+    >
+      <div class="navigation-dialog-header">
+        <h2 id="page-outline-title">本页目录</h2>
+        <button
+          type="button"
+          class="close-navigation"
+          aria-label="关闭本页目录"
+        >
+          <Icon name="X" size={20} />
+        </button>
+      </div>
+      <div class="mobile-nav-content"></div>
+    </dialog>
+  )}
+  <div
+    id="outline-tooltip"
+    class="outline-tooltip"
+    role="tooltip"
+    popover="manual"
+  ></div>
+  <template id="copy-code-icons">
+    <span data-copy-icon="idle">
+      <Icon name="Copy" size={15} />
+    </span>
+    <span data-copy-icon="copied">
+      <Icon name="Check" size={15} />
+    </span>
+    <span data-copy-icon="error">
+      <Icon name="CircleAlert" size={15} />
+    </span>
+  </template>
   <script>
     import Viewer from 'viewerjs';
     import 'viewerjs/dist/viewer.min.css';
     const panel = document.querySelector<HTMLDetailsElement>('.sidebar-panel');
-    const desktop = matchMedia('(min-width: 960px)');
-    const syncSidebar = () => {
-      if (panel) panel.open = desktop.matches;
-    };
-    syncSidebar();
-    desktop.addEventListener('change', syncSidebar);
+    if (panel) panel.open = true;
+    const navigationSources = [
+      {
+        id: 'article-navigation-dialog',
+        source: '.sidebar-panel',
+        maxWidth: 959,
+      },
+      { id: 'page-outline-dialog', source: '.article-outline', maxWidth: 1250 },
+    ];
+    for (const { id, source, maxWidth } of navigationSources) {
+      const dialog = document.getElementById(id) as HTMLDialogElement | null;
+      const parent = document.querySelector(source);
+      const navigation = parent?.querySelector('nav');
+      const content = dialog?.querySelector('.mobile-nav-content');
+      const trigger = document.querySelector<HTMLButtonElement>(
+        `[aria-controls="${id}"]`,
+      );
+      if (!dialog || !parent || !navigation || !content || !trigger) continue;
+      trigger.setAttribute('aria-expanded', 'false');
+      trigger.addEventListener('click', () => {
+        if (!matchMedia(`(max-width: ${maxWidth}px)`).matches) return;
+        if (dialog.open) {
+          dialog.close();
+          return;
+        }
+        document
+          .querySelectorAll<HTMLDialogElement>('.navigation-dialog[open]')
+          .forEach((other) => other.close());
+        content.appendChild(navigation);
+        dialog.showModal();
+        trigger.setAttribute('aria-expanded', 'true');
+        document.documentElement.classList.add('navigation-modal-open');
+      });
+      dialog
+        .querySelector('.close-navigation')
+        ?.addEventListener('click', () => dialog.close());
+      dialog.addEventListener('click', (event) => {
+        if (event.target === dialog || (event.target as Element).closest('a'))
+          dialog.close();
+      });
+      dialog.addEventListener('close', () => {
+        parent.appendChild(navigation);
+        trigger.setAttribute('aria-expanded', 'false');
+        if (!document.querySelector('.navigation-dialog[open]')) {
+          document.documentElement.classList.remove('navigation-modal-open');
+          trigger.focus({ preventScroll: true });
+        }
+      });
+      matchMedia(`(min-width: ${maxWidth + 1}px)`).addEventListener(
+        'change',
+        (event) => {
+          if (event.matches && dialog.open) dialog.close();
+        },
+      );
+    }
     const article = document.querySelector<HTMLElement>('.article-body');
     if (article)
       new Viewer(article, {
@@ -190,21 +322,37 @@ const readingTime = Math.max(
         title: true,
         filter: (image: HTMLImageElement) => !image.closest('a'),
       });
+    const copyIcons =
+      document.querySelector<HTMLTemplateElement>('#copy-code-icons');
     document
       .querySelectorAll<HTMLButtonElement>('.copy-code')
-      .forEach((button) =>
+      .forEach((button) => {
+        if (copyIcons)
+          button.replaceChildren(copyIcons.content.cloneNode(true));
+        button.dataset.state = 'idle';
+        button.title = '复制代码';
+        let resetTimer: ReturnType<typeof setTimeout>;
         button.addEventListener('click', async () => {
           const code =
-            button.parentElement?.querySelector('code')?.textContent || '';
+            button.closest('.code-block')?.querySelector('code')?.textContent ||
+            '';
+          clearTimeout(resetTimer);
           try {
             await navigator.clipboard.writeText(code);
-            button.textContent = '已复制';
+            button.dataset.state = 'copied';
+            button.title = '已复制';
           } catch {
-            button.textContent = '复制失败';
+            button.dataset.state = 'error';
+            button.title = '复制失败，请重试';
           }
-          setTimeout(() => (button.textContent = '复制'), 1800);
-        }),
-      );
+          button.setAttribute('aria-label', button.title);
+          resetTimer = setTimeout(() => {
+            button.dataset.state = 'idle';
+            button.title = '复制代码';
+            button.setAttribute('aria-label', '复制代码');
+          }, 1800);
+        });
+      });
     const links = [
       ...document.querySelectorAll<HTMLAnchorElement>('.article-outline a'),
     ];
@@ -226,6 +374,36 @@ const readingTime = Math.max(
     document
       .querySelectorAll('.article-body h2,.article-body h3,.article-body h4')
       .forEach((heading) => observer.observe(heading));
+    const tooltip = document.querySelector<HTMLElement>('#outline-tooltip');
+    let tooltipLink: HTMLAnchorElement | undefined;
+    const hideOutlineTooltip = () => {
+      tooltip?.hidePopover();
+      tooltipLink?.removeAttribute('aria-describedby');
+      tooltipLink = undefined;
+    };
+    for (const link of links) {
+      const showTooltip = () => {
+        if (!tooltip || link.scrollWidth <= link.clientWidth) return;
+        hideOutlineTooltip();
+        tooltipLink = link;
+        tooltip.textContent = link.textContent?.trim() || '';
+        link.setAttribute('aria-describedby', 'outline-tooltip');
+        tooltip.showPopover();
+        const bounds = link.getBoundingClientRect();
+        tooltip.style.left = `${Math.max(12, Math.min(bounds.left, innerWidth - tooltip.offsetWidth - 12))}px`;
+        tooltip.style.top = `${Math.max(12, Math.min(bounds.bottom + 6, innerHeight - tooltip.offsetHeight - 12))}px`;
+      };
+      link.addEventListener('pointerenter', showTooltip);
+      link.addEventListener('pointerleave', hideOutlineTooltip);
+      link.addEventListener('focus', showTooltip);
+      link.addEventListener('blur', hideOutlineTooltip);
+      link.addEventListener('click', hideOutlineTooltip);
+    }
+    window.addEventListener('resize', hideOutlineTooltip);
+    document.addEventListener('scroll', hideOutlineTooltip, true);
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') hideOutlineTooltip();
+    });
     const host = document.querySelector<HTMLElement>('.giscus');
     if (host) {
       const script = document.createElement('script');

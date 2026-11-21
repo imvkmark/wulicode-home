@@ -1,5 +1,14 @@
 ---
 import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+const topicIcons = [
+  'CodeXml',
+  'MonitorSmartphone',
+  'Database',
+  'Terminal',
+  'Bot',
+  'PanelsTopLeft',
+] as const;
 import { topics, featuredArticles, relatedSiteGroups } from '../lib/site.mjs';
 import { normalizeLink, getArticles } from '../lib/content.mjs';
 const articles = getArticles();
@@ -21,7 +30,7 @@ const recent = [...articles]
         </p>
         <div class="intro-actions">
           <a class="home-button primary" href="#knowledge-topics">
-            浏览分类 <span aria-hidden="true">→</span>
+            浏览分类 <Icon name="ArrowRight" />
           </a>
           <a class="home-button secondary" href="/articles.html">
             全部文章 · {count}
@@ -32,17 +41,19 @@ const recent = [...articles]
         <div class="journal-heading">
           <span>最近更新</span>
           <a href="/rss.xml" aria-label="订阅 RSS">
-            RSS ↗
+            <Icon name="Rss" size={12} /> RSS
           </a>
         </div>
-        {recent.map((article, index) => (
+        {recent.map((article) => (
           <a class="journal-entry" href={article.url}>
-            <span class="journal-number">0{index + 1}</span>
+            <Icon name="FileText" class="journal-icon" size={16} />
             <div>
               <p>{article.category}</p>
               <h2>{article.title}</h2>
             </div>
-            <span aria-hidden="true">↗</span>
+            <span aria-hidden="true">
+              <Icon name="ArrowUpRight" size={14} />
+            </span>
           </a>
         ))}
         <div class="journal-footer">
@@ -62,8 +73,7 @@ const recent = [...articles]
     >
       <div class="home-section-heading">
         <div>
-          <p class="section-kicker">EXPLORE</p>
-          <h2 id="topics-title">沿着兴趣，深入一点</h2>
+          <h2 id="topics-title">技术分类</h2>
         </div>
         <p class="section-description">从语言基础到工程实践，按方向探索。</p>
       </div>
@@ -72,22 +82,7 @@ const recent = [...articles]
           <a class="topic-card" href={normalizeLink(topic.link)}>
             <div class="topic-card-top">
               <span class="topic-icon">
-                <svg
-                  width="23"
-                  height="23"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d={topic.icon} />
-                </svg>
-              </span>
-              <span class="topic-number" aria-hidden="true">
-                0{index + 1}
+                <Icon name={topicIcons[index]} size={22} />
               </span>
             </div>
             <h3>{topic.title}</h3>
@@ -95,7 +90,7 @@ const recent = [...articles]
             <p class="topic-tags">
               <span>{topic.tags}</span>
               <span class="topic-arrow" aria-hidden="true">
-                ↗
+                <Icon name="ArrowUpRight" />
               </span>
             </p>
           </a>
@@ -105,24 +100,22 @@ const recent = [...articles]
     <section class="reading-section" aria-labelledby="reading-title">
       <div class="home-section-heading">
         <div>
-          <p class="section-kicker">SELECTED NOTES</p>
-          <h2 id="reading-title">值得再读的笔记</h2>
+          <h2 id="reading-title">精选笔记</h2>
         </div>
         <a class="all-articles" href="/articles.html">
-          全部文章 ↗
+          全部文章 <Icon name="ArrowUpRight" size={13} />
         </a>
       </div>
       <div class="reading-grid">
-        {featuredArticles.map((article, index) => (
+        {featuredArticles.map((article) => (
           <a class="reading-card" href={normalizeLink(article.link)}>
             <div class="reading-card-top">
               <p class="reading-tag">{article.tag}</p>
-              <span aria-hidden="true">0{index + 1}</span>
             </div>
             <h3>{article.title}</h3>
             <p>{article.description}</p>
             <span class="reading-link">
-              阅读全文 <span aria-hidden="true">→</span>
+              阅读全文 <Icon name="ArrowRight" />
             </span>
           </a>
         ))}
@@ -136,7 +129,9 @@ const recent = [...articles]
             {group.sites.map((site) => (
               <a href={site.link} target="_blank" rel="noopener noreferrer">
                 {site.text}
-                <span aria-hidden="true">↗</span>
+                <span aria-hidden="true">
+                  <Icon name="ArrowUpRight" size={14} />
+                </span>
                 <span class="visually-hidden">（在新标签页打开）</span>
               </a>
             ))}

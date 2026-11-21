@@ -1,4 +1,6 @@
 ---
+import Icon from '../components/Icon.astro';
+import GithubIcon from '../components/GithubIcon.astro';
 import { site, nav } from '../lib/site.mjs';
 import { normalizeLink } from '../lib/content.mjs';
 import '../styles/home.css';
@@ -80,7 +82,7 @@ const children = (item: import('../lib/site.mjs').NavItem) =>
         <div class="header-actions">
           <div id="docsearch">
             <button type="button" class="search-trigger" aria-label="搜索文章">
-              ⌕ <span>搜索文章</span>
+              <Icon name="Search" size={16} /> <span>搜索文章</span>
               <kbd>⌘ K</kbd>
             </button>
           </div>
@@ -90,7 +92,8 @@ const children = (item: import('../lib/site.mjs').NavItem) =>
             aria-label="切换深色模式"
             aria-pressed="false"
           >
-            <span aria-hidden="true">◐</span>
+            <Icon name="Sun" class="theme-sun" size={17} />
+            <Icon name="Moon" class="theme-moon" size={17} />
           </button>
           <button
             class="mobile-toggle"
@@ -99,8 +102,19 @@ const children = (item: import('../lib/site.mjs').NavItem) =>
             aria-expanded="false"
             aria-controls="main-navigation"
           >
-            ☰
+            <Icon name="Menu" class="menu-open" size={19} />
+            <Icon name="X" class="menu-close" size={19} />
           </button>
+          <a
+            class="github-icon-link"
+            href="https://github.com/imvkmark/wulicode-home"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub 仓库（在新标签页打开）"
+            title="GitHub 仓库"
+          >
+            <GithubIcon />
+          </a>
         </div>
         <nav id="main-navigation" class="main-navigation" aria-label="主导航">
           {nav.map((item) =>
@@ -117,7 +131,7 @@ const children = (item: import('../lib/site.mjs').NavItem) =>
               <details class="nav-dropdown">
                 <summary>
                   {item.text}
-                  <span aria-hidden="true">⌄</span>
+                  <Icon name="ChevronDown" size={12} />
                 </summary>
                 <div class="nav-dropdown-links">
                   {children(item).map((child) => (
@@ -127,14 +141,6 @@ const children = (item: import('../lib/site.mjs').NavItem) =>
               </details>
             ),
           )}
-          <a
-            class="github-link"
-            href="https://github.com/imvkmark/wulicode-home"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub ↗
-          </a>
         </nav>
       </div>
     </header>
@@ -151,7 +157,9 @@ const children = (item: import('../lib/site.mjs').NavItem) =>
       >
         鲁ICP备13016276号-7
       </a>
-      <a href="/rss.xml">RSS</a>
+      <a class="footer-rss" href="/rss.xml">
+        <Icon name="Rss" size={13} /> RSS
+      </a>
     </footer>
     <script>
       import type { DocSearchInstance } from '@docsearch/js/docsearch';

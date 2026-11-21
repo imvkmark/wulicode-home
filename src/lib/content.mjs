@@ -328,8 +328,29 @@ export async function renderArticle(article) {
   }
   visit(tokens);
   const fence = md.renderer.rules.fence;
-  md.renderer.rules.fence = (...args) =>
-    `<div class="code-block"><button type="button" class="copy-code" aria-label="复制代码">复制</button>${fence(...args)}</div>`;
+  md.renderer.rules.fence = (...args) => {
+    const language = args[0][args[1]].info
+      .trim()
+      .split(/[\s{]/)[0]
+      .toLowerCase();
+    const labels = {
+      py: 'python',
+      js: 'javascript',
+      ts: 'typescript',
+      sh: 'shell',
+      bash: 'shell',
+      zsh: 'shell',
+      yml: 'yaml',
+      plaintext: 'text',
+      plain: 'text',
+    };
+    const label = md.utils.escapeHtml(labels[language] || language);
+    const languageLabel =
+      label && label !== 'text'
+        ? `<span class="code-language">${label}</span>`
+        : '';
+    return `<div class="code-block">${languageLabel}<div class="code-toolbar"><button type="button" class="copy-code" aria-label="复制代码">复制</button></div>${fence(...args)}</div>`;
+  };
   const html = sanitizeHtml(md.renderer.render(tokens, md.options, {}), {
     allowedTags: [
       ...sanitizeHtml.defaults.allowedTags,

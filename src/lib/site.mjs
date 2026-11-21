@@ -30,7 +30,7 @@ export const nav = [
       { text: 'Redis', link: '/database/redis/' },
       { text: 'Mongo', link: '/database/mongo/' },
       {
-        items: [{ text: '📚 Redis Document', link: '/database/redis/docs' }],
+        items: [{ text: 'Redis Document', link: '/database/redis/docs' }],
       },
     ],
   },
@@ -69,7 +69,6 @@ export const topics = [
     description: '语言基础、框架用法与服务端开发笔记。',
     tags: 'Java / PHP / Python',
     link: '/back-end/java/',
-    icon: 'M4 5h16v14H4z M4 9h16 M8 13l2 2-2 2 M13 17h3',
   },
   {
     number: '02',
@@ -77,7 +76,6 @@ export const topics = [
     description: 'JavaScript、Web 框架与移动端开发。',
     tags: 'JavaScript / Web / App',
     link: '/front-end/web/',
-    icon: 'M3 4h13v12H3z M7 20h5 M9 16v4 M18 9h3v11h-6v-2',
   },
   {
     number: '03',
@@ -85,7 +83,6 @@ export const topics = [
     description: '数据库使用、缓存机制与常见问题。',
     tags: 'MySQL / Redis / MongoDB',
     link: '/database/primer/',
-    icon: 'M20 6c0 2-3.6 3-8 3S4 8 4 6s3.6-3 8-3 8 1 8 3z M4 6v12c0 2 3.6 3 8 3s8-1 8-3V6 M4 12c0 2 3.6 3 8 3s8-1 8-3',
   },
   {
     number: '04',
@@ -93,7 +90,6 @@ export const topics = [
     description: '系统配置、部署维护与开发工具。',
     tags: 'Linux / Docker / Git',
     link: '/ops/',
-    icon: 'M4 5h16v14H4z M8 10l3 3-3 3 M13 16h3',
   },
   {
     number: '05',
@@ -101,7 +97,6 @@ export const topics = [
     description: 'AI 编程工具的配置、用法与实践记录。',
     tags: 'Claude Code / OpenSpec',
     link: '/ai/primer/awesome',
-    icon: 'M5 7h14v13H5z M9 12h.01 M15 12h.01 M9 16h6 M12 3v4 M2 11v5 M22 11v5',
   },
   {
     number: '06',
@@ -109,7 +104,6 @@ export const topics = [
     description: '界面设计、交互细节与体验分析。',
     tags: 'UI / 交互设计 / A/B 测试',
     link: '/design/ui/',
-    icon: 'M4 4h16v16H4z M4 10h16 M10 10v10 M8 7h.01 M11 7h.01',
   },
 ];
 export const featuredArticles = [

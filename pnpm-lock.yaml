@@ -184,6 +184,9 @@ importers:
       '@docsearch/js':
         specifier: ^5.2.0
         version: 5.2.0
+      '@lucide/astro':
+        specifier: ^1.77.0
+        version: 1.77.0(astro@7.4.13(@types/node@26.6.6)(yaml@2.9.1))
       astro:
         specifier: ^7.4.13
         version: 7.4.13(@types/node@26.6.6)(yaml@2.9.1)
@@ -651,6 +654,11 @@ packages:
 
   '@jridgewell/sourcemap-codec@1.6.0':
     resolution: {integrity: sha512-T7jf+5zgsZHwNJ4lvQ7/aezbyk0nNX+zJVWpmHA7VYsEx7a7qr5Rg5IbtJFqkgze5Y2sruq1RUY8Q837Od7iFw==}
+
+  '@lucide/astro@1.77.0':
+    resolution: {integrity: sha512-X3M0FSfN863QNPxNzR1JbY8xe9sMQLYzmN+z3LC7UUHkwh3qZtODECnx5cv++ZnRNH0NIaZlNx8ofnblZyiuLg==}
+    peerDependencies:
+      astro: ^4 || ^5 || ^6 || ^7
 
   '@napi-rs/wasm-runtime@1.2.4':
     resolution: {integrity: sha512-AJxoUD2/15ESHbvpcyjU274nsAPLuOtPHCk0vKJM5pj//Fg/B1FXNWjPnXTT9PymCYYiHo4zPj0ZomXBKhoy7g==}
@@ -2453,6 +2461,10 @@ snapshots:
     optional: true
 
   '@jridgewell/sourcemap-codec@1.6.0': {}
+
+  '@lucide/astro@1.77.0(astro@7.4.13(@types/node@26.6.6)(yaml@2.9.1))':
+    dependencies:
+      astro: 7.4.13(@types/node@26.6.6)(yaml@2.9.1)
 
   '@napi-rs/wasm-runtime@1.2.4(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)':
     dependencies:

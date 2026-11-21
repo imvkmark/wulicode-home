@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
 ---
 
 <Base title="页面未找到">
@@ -8,7 +9,7 @@ import Base from '../layouts/Base.astro';
     <h1>这篇笔记还没有找到</h1>
     <p>可以搜索文章，或回到首页继续浏览。</p>
     <a class="home-button primary" href="/">
-      返回首页 →
+      返回首页 <Icon name="ArrowRight" />
     </a>
   </main>
 </Base>
