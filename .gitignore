@@ -24,3 +24,7 @@ Pipfile.lock
 .claude
 # Image checker cache and reports
 .image-check/
+
+# Astro
+.astro/
+dist/

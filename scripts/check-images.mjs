@@ -161,6 +161,9 @@ export async function run(options) {
         try { collect(extractConfigImages(await fs.readFile(file, 'utf8'), file)); }
         catch (error) { if (error.code !== 'ENOENT') throw error; }
     }
+    const siteConfig = path.join(path.dirname(docs), 'src/lib/site.mjs');
+    try { collect(extractConfigImages(await fs.readFile(siteConfig, 'utf8'), siteConfig)); }
+    catch (error) { if (error.code !== 'ENOENT') throw error; }
     console.log(`扫描 ${articles} 篇文章，${groups.size} 个唯一图片地址。`);
     const jobs = [...groups.entries()];
     const nextCache = {};

@@ -1,0 +1,257 @@
+---
+import Base from './Base.astro';
+import {
+  getArticles,
+  getSidebar,
+  renderArticle,
+  sidebarScope,
+} from '../lib/content.mjs';
+import { categoryNames } from '../lib/site.mjs';
+interface Props {
+  page: import('../lib/content.mjs').ArticleRecord;
+}
+const { page } = Astro.props;
+const { html, headings } = page.body
+  ? await renderArticle(page)
+  : { html: '', headings: [] };
+const groups = getSidebar(page.id);
+const scope = sidebarScope(page.id);
+const siblings = getArticles().filter((article) =>
+  article.id.startsWith(`${scope}/`),
+);
+const index = siblings.findIndex((article) => article.id === page.id);
+const prev = index > 0 ? siblings[index - 1] : undefined;
+const next = index >= 0 ? siblings[index + 1] : undefined;
+const children = getArticles().filter(
+  (article) =>
+    article.id.startsWith(page.id.replace(/\/index$/, '') + '/') &&
+    article.id !== page.id,
+);
+const breadcrumbs = page.id
+  .split('/')
+  .slice(0, -1)
+  .map((part, i, parts) => ({
+    title: categoryNames[part] || part,
+    url: `/${parts.slice(0, i + 1).join('/')}/`,
+  }));
+const date = page.date
+  ? new Intl.DateTimeFormat('zh-CN', {
+      dateStyle: 'medium',
+      timeZone: 'Asia/Shanghai',
+    }).format(new Date(page.date))
+  : undefined;
+const readingTime = Math.max(
+  1,
+  Math.ceil((page.body || '').replace(/```[\s\S]*?```/g, '').length / 500),
+);
+---
+
+<Base
+  title={page.title}
+  description={page.description}
+  canonical={page.url}
+  article={!page.generated}
+>
+  <div class="article-shell VPDoc">
+    <aside class="article-sidebar" aria-label="文章导航">
+      <details class="sidebar-panel" open>
+        <summary>
+          文章导航 <span aria-hidden="true">⌄</span>
+        </summary>
+        <nav>
+          <a class="sidebar-overview" href={`/${scope}/`}>
+            {categoryNames[scope.split('/').at(-1) || ''] || page.category} ·
+            全部文章
+          </a>
+          {groups.map((group) => (
+            <details
+              class="sidebar-group"
+              open={group.articles.some((article) => article.id === page.id)}
+            >
+              <summary>{group.title}</summary>
+              <ul>
+                {group.articles.map((article) => (
+                  <li>
+                    <a
+                      href={article.url}
+                      aria-current={article.id === page.id ? 'page' : undefined}
+                    >
+                      {article.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          ))}
+        </nav>
+      </details>
+    </aside>
+    <main id="main-content" class="article-main content content-container">
+      <nav class="breadcrumbs" aria-label="面包屑">
+        <a href="/">首页</a>
+        {breadcrumbs.map((crumb) => (
+          <>
+            <span aria-hidden="true">/</span>
+            <a href={crumb.url}>{crumb.title}</a>
+          </>
+        ))}
+      </nav>
+      <header class="article-header vp-doc">
+        <p class="article-category">{page.category}</p>
+        <h1>{page.title}</h1>
+        <div class="article-meta">
+          {date && (
+            <span>
+              最后更新 <time datetime={page.date}>{date}</time>
+            </span>
+          )}
+          {!page.generated && <span>约 {readingTime} 分钟阅读</span>}
+        </div>
+      </header>
+      {page.body && (
+        <article
+          class="article-body vp-doc"
+          data-pagefind-body
+          set:html={html}
+        />
+      )}
+      {(page.generated || page.id.endsWith('/index')) &&
+        children.length > 0 && (
+          <section class="category-articles" aria-label="分类文章">
+            <h2>
+              文章目录 <span>{children.length}</span>
+            </h2>
+            <div class="article-list">
+              {children.map((article) => (
+                <a class="article-list-item" href={article.url}>
+                  <span class="list-category">{article.category}</span>
+                  <h3>{article.title}</h3>
+                  <p>{article.description}</p>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
+      {!page.generated && (
+        <nav class="article-pager" aria-label="相邻文章">
+          {prev ? (
+            <a href={prev.url}>
+              <span>上一篇</span>
+              <strong>{prev.title}</strong>
+            </a>
+          ) : (
+            <span />
+          )}
+          {next && (
+            <a href={next.url}>
+              <span>下一篇</span>
+              <strong>{next.title}</strong>
+            </a>
+          )}
+        </nav>
+      )}
+      {!page.generated && page.meta.comment !== false && (
+        <section class="comments" aria-label="文章评论">
+          <h2>交流与讨论</h2>
+          <div class="giscus" data-title={page.title}></div>
+        </section>
+      )}
+    </main>
+    {headings.length > 0 && (
+      <aside class="article-outline">
+        <nav aria-label="本页目录">
+          <h2>本页目录</h2>
+          <ol>
+            {headings.map((heading) => (
+              <li class={`depth-${heading.depth}`}>
+                <a href={`#${heading.slug}`}>{heading.text}</a>
+              </li>
+            ))}
+          </ol>
+        </nav>
+      </aside>
+    )}
+  </div>
+  <script>
+    import Viewer from 'viewerjs';
+    import 'viewerjs/dist/viewer.min.css';
+    const panel = document.querySelector<HTMLDetailsElement>('.sidebar-panel');
+    const desktop = matchMedia('(min-width: 960px)');
+    const syncSidebar = () => {
+      if (panel) panel.open = desktop.matches;
+    };
+    syncSidebar();
+    desktop.addEventListener('change', syncSidebar);
+    const article = document.querySelector<HTMLElement>('.article-body');
+    if (article)
+      new Viewer(article, {
+        toolbar: true,
+        navbar: false,
+        title: true,
+        filter: (image: HTMLImageElement) => !image.closest('a'),
+      });
+    document
+      .querySelectorAll<HTMLButtonElement>('.copy-code')
+      .forEach((button) =>
+        button.addEventListener('click', async () => {
+          const code =
+            button.parentElement?.querySelector('code')?.textContent || '';
+          try {
+            await navigator.clipboard.writeText(code);
+            button.textContent = '已复制';
+          } catch {
+            button.textContent = '复制失败';
+          }
+          setTimeout(() => (button.textContent = '复制'), 1800);
+        }),
+      );
+    const links = [
+      ...document.querySelectorAll<HTMLAnchorElement>('.article-outline a'),
+    ];
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries)
+          if (entry.isIntersecting) {
+            links.forEach((link) => {
+              const active =
+                decodeURIComponent(link.hash.slice(1)) === entry.target.id;
+              link.classList.toggle('active', active);
+              if (active) link.setAttribute('aria-current', 'location');
+              else link.removeAttribute('aria-current');
+            });
+          }
+      },
+      { rootMargin: '-15% 0px -65% 0px' },
+    );
+    document
+      .querySelectorAll('.article-body h2,.article-body h3,.article-body h4')
+      .forEach((heading) => observer.observe(heading));
+    const host = document.querySelector<HTMLElement>('.giscus');
+    if (host) {
+      const script = document.createElement('script');
+      script.src = 'https://giscus.app/client.js';
+      script.async = true;
+      script.crossOrigin = 'anonymous';
+      const config = {
+        repo: 'imvkmark/wulicode-home',
+        'repo-id': 'R_kgDOJfaw1A',
+        category: 'General',
+        'category-id': 'DIC_kwDOJfaw1M4CW2uA',
+        mapping: 'title',
+        strict: '0',
+        'reactions-enabled': '1',
+        'emit-metadata': '0',
+        'input-position': 'top',
+        theme: document.documentElement.classList.contains('dark')
+          ? 'dark'
+          : 'light',
+        lang: 'zh-CN',
+        loading: 'lazy',
+      };
+      Object.entries(config).forEach(([key, value]) =>
+        script.setAttribute(`data-${key}`, value),
+      );
+      host.appendChild(script);
+    }
+  </script>
+</Base>

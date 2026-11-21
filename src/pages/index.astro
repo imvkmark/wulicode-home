@@ -1,0 +1,103 @@
+---
+import Base from '../layouts/Base.astro';
+import { topics, featuredArticles, relatedSiteGroups } from '../lib/site.mjs';
+import { normalizeLink, getArticles } from '../lib/content.mjs';
+const count = getArticles().length;
+---
+
+<Base>
+  <main class="knowledge-home" id="main-content">
+    <section class="home-intro" aria-labelledby="home-title">
+      <div class="intro-copy">
+        <p class="home-eyebrow">开发 · 记录 · 分享</p>
+        <h1 id="home-title">Wulicode</h1>
+        <p class="intro-subtitle">相互关联，相互对比</p>
+        <p class="intro-description">
+          开发笔记、技术资料与实践记录。生命不息，学习不止。
+        </p>
+        <div class="intro-actions">
+          <a class="home-button primary" href="#knowledge-topics">
+            浏览分类 <span aria-hidden="true">→</span>
+          </a>
+          <a class="home-button secondary" href="/articles.html">
+            全部文章 · {count}
+          </a>
+        </div>
+      </div>
+    </section>
+    <section
+      id="knowledge-topics"
+      class="topics-section"
+      aria-labelledby="topics-title"
+    >
+      <div class="home-section-heading">
+        <h2 id="topics-title">技术分类</h2>
+      </div>
+      <div class="topic-grid">
+        {topics.map((topic) => (
+          <a class="topic-card" href={normalizeLink(topic.link)}>
+            <div class="topic-card-top">
+              <span class="topic-icon">
+                <svg
+                  width="23"
+                  height="23"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d={topic.icon} />
+                </svg>
+              </span>
+              <span class="topic-arrow" aria-hidden="true">
+                →
+              </span>
+            </div>
+            <h3>{topic.title}</h3>
+            <p class="topic-description">{topic.description}</p>
+            <p class="topic-tags">{topic.tags}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+    <section class="reading-section" aria-labelledby="reading-title">
+      <div class="home-section-heading">
+        <h2 id="reading-title">精选笔记</h2>
+        <a class="all-articles" href="/articles.html">
+          全部文章 ↗
+        </a>
+      </div>
+      <div class="reading-grid">
+        {featuredArticles.map((article) => (
+          <a class="reading-card" href={normalizeLink(article.link)}>
+            <p class="reading-tag">{article.tag}</p>
+            <h3>{article.title}</h3>
+            <p>{article.description}</p>
+            <span class="reading-link">
+              阅读全文 <span aria-hidden="true">→</span>
+            </span>
+          </a>
+        ))}
+      </div>
+    </section>
+    <nav class="home-related" aria-label="相关站点">
+      {relatedSiteGroups.map((group) => (
+        <section class="home-related-group" aria-labelledby={group.id}>
+          <h2 id={group.id}>{group.title}</h2>
+          <div class="home-related-links">
+            {group.sites.map((site) => (
+              <a href={site.link} target="_blank" rel="noopener noreferrer">
+                {site.text}
+                <span aria-hidden="true">↗</span>
+                <span class="visually-hidden">（在新标签页打开）</span>
+              </a>
+            ))}
+          </div>
+        </section>
+      ))}
+    </nav>
+  </main>
+</Base>

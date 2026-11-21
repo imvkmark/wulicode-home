@@ -1,0 +1,15 @@
+---
+import Article from '../../layouts/Article.astro';
+import { getPages } from '../../lib/content.mjs';
+export function getStaticPaths() {
+  return getPages()
+    .filter((page) => page.id.endsWith('/index'))
+    .map((page) => ({
+      params: { path: page.id.slice(0, -6) },
+      props: { page },
+    }));
+}
+const { page } = Astro.props;
+---
+
+<Article page={page} />

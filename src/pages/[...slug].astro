@@ -1,0 +1,12 @@
+---
+import Article from '../layouts/Article.astro';
+import { getPages } from '../lib/content.mjs';
+export function getStaticPaths() {
+  return getPages()
+    .filter((page) => !page.id.endsWith('/index'))
+    .map((page) => ({ params: { slug: page.id }, props: { page } }));
+}
+const { page } = Astro.props;
+---
+
+<Article page={page} />

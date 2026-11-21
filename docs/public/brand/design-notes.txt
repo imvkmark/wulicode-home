@@ -1,0 +1,5 @@
+# Wulicode logo
+
+Generated with the built-in imagegen tool. Transparent PNG used for the site brand and favicon.
+
+Prompt: A compact geometric W monogram combining interlocking folded code ribbons and an open-book suggestion in the negative space. Blue #2b99e1 and teal #30c099, bold silhouette legible at small sizes, transparent background, no wordmark or enclosing tile.

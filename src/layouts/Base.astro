@@ -1,0 +1,250 @@
+---
+import { site, nav } from '../lib/site.mjs';
+import { normalizeLink } from '../lib/content.mjs';
+import '../styles/home.css';
+import '../styles/site.css';
+import '@docsearch/css';
+interface Props {
+  title?: string;
+  description?: string;
+  canonical?: string;
+  article?: boolean;
+}
+const {
+  title = site.title,
+  description = site.description,
+  canonical,
+  article = false,
+} = Astro.props;
+const canonicalUrl = new URL(canonical || Astro.url.pathname, site.url).href;
+const children = (item: import('../lib/site.mjs').NavItem) =>
+  (item.items || []).flatMap((child) => child.items || [child]);
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title === site.title ? title : `${title} | ${site.title}`}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:type" content={article ? 'article' : 'website'} />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" type="image/png" href={site.logo} />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Wulicode 最新文章"
+      href="/rss.xml"
+    />
+    <script is:inline>
+      try {
+        const theme =
+          localStorage.getItem('wulicode-theme') ||
+          localStorage.getItem('vitepress-theme-appearance');
+        document.documentElement.classList.toggle(
+          'dark',
+          theme === 'dark' ||
+            ((!theme || theme === 'auto') &&
+              matchMedia('(prefers-color-scheme: dark)').matches),
+        );
+      } catch {}
+    </script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6STKYFNBZK"
+    ></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-6STKYFNBZK');
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">
+      跳转到正文
+    </a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="site-brand" href="/">
+          <img src={site.logo} alt="" width="32" height="32" />
+          <span>Wulicode</span>
+        </a>
+        <div class="header-actions">
+          <div id="docsearch">
+            <button type="button" class="search-trigger" aria-label="搜索文章">
+              ⌕ <span>搜索文章</span>
+              <kbd>⌘ K</kbd>
+            </button>
+          </div>
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="切换深色模式"
+            aria-pressed="false"
+          >
+            <span aria-hidden="true">◐</span>
+          </button>
+          <button
+            class="mobile-toggle"
+            type="button"
+            aria-label="打开导航菜单"
+            aria-expanded="false"
+            aria-controls="main-navigation"
+          >
+            ☰
+          </button>
+        </div>
+        <nav id="main-navigation" class="main-navigation" aria-label="主导航">
+          {nav.map((item) =>
+            item.link ? (
+              <a
+                href={normalizeLink(item.link)}
+                aria-current={
+                  Astro.url.pathname.startsWith(item.link) ? 'page' : undefined
+                }
+              >
+                {item.text}
+              </a>
+            ) : (
+              <details class="nav-dropdown">
+                <summary>
+                  {item.text}
+                  <span aria-hidden="true">⌄</span>
+                </summary>
+                <div class="nav-dropdown-links">
+                  {children(item).map((child) => (
+                    <a href={normalizeLink(child.link || '/')}>{child.text}</a>
+                  ))}
+                </div>
+              </details>
+            ),
+          )}
+          <a
+            class="github-link"
+            href="https://github.com/imvkmark/wulicode-home"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub ↗
+          </a>
+        </nav>
+      </div>
+    </header>
+    <slot />
+    <footer class="site-footer">
+      <p>
+        Copyright © 2015–{new Date().getFullYear()} 多厘 · Released under the CC
+        License.
+      </p>
+      <a
+        href="https://beian.miit.gov.cn/#/Integrated/index"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        鲁ICP备13016276号-7
+      </a>
+      <a href="/rss.xml">RSS</a>
+    </footer>
+    <script>
+      import type { DocSearchInstance } from '@docsearch/js/docsearch';
+      let searchPromise: Promise<DocSearchInstance> | undefined;
+      const loadSearch = () =>
+        (searchPromise ||= import('@docsearch/js/docsearch').then(
+          ({ default: docsearch }) =>
+            new Promise<DocSearchInstance>((resolve) => {
+              const instance = docsearch({
+                container: '#docsearch',
+                appId: '742146PIMW',
+                apiKey: '135afb8e4131b81b106ec88c99365f6e',
+                indices: [
+                  { name: 'wulicode', searchParameters: { hitsPerPage: 20 } },
+                ],
+                placeholder: '搜索文章',
+                translations: {
+                  button: {
+                    buttonText: '搜索文章',
+                    buttonAriaLabel: '搜索文章',
+                  },
+                },
+                onReady: () => queueMicrotask(() => resolve(instance)),
+              });
+            }),
+        ));
+      const openSearch = async () => {
+        try {
+          (await loadSearch()).open();
+        } catch {
+          searchPromise = undefined;
+          const trigger = document.querySelector('.search-trigger');
+          if (trigger) trigger.textContent = '搜索暂不可用，请重试';
+        }
+      };
+      document
+        .querySelector('.search-trigger')
+        ?.addEventListener('click', openSearch);
+      document.addEventListener('keydown', (event) => {
+        if (
+          (event.metaKey || event.ctrlKey) &&
+          event.key.toLowerCase() === 'k'
+        ) {
+          event.preventDefault();
+          openSearch();
+        }
+      });
+      const button = document.querySelector<HTMLButtonElement>('.theme-toggle');
+      const syncTheme = () =>
+        button?.setAttribute(
+          'aria-pressed',
+          String(document.documentElement.classList.contains('dark')),
+        );
+      syncTheme();
+      button?.addEventListener('click', () => {
+        const dark = document.documentElement.classList.toggle('dark');
+        try {
+          localStorage.setItem('wulicode-theme', dark ? 'dark' : 'light');
+        } catch {}
+        syncTheme();
+        document
+          .querySelector<HTMLIFrameElement>('iframe.giscus-frame')
+          ?.contentWindow?.postMessage(
+            { giscus: { setConfig: { theme: dark ? 'dark' : 'light' } } },
+            'https://giscus.app',
+          );
+      });
+      const toggle =
+        document.querySelector<HTMLButtonElement>('.mobile-toggle');
+      toggle?.addEventListener('click', () => {
+        const open = toggle.getAttribute('aria-expanded') !== 'true';
+        toggle.setAttribute('aria-expanded', String(open));
+        document
+          .querySelector('.main-navigation')
+          ?.classList.toggle('is-open', open);
+      });
+      document.addEventListener('click', (event) => {
+        for (const dropdown of document.querySelectorAll<HTMLDetailsElement>(
+          '.nav-dropdown[open]',
+        ))
+          if (!dropdown.contains(event.target as Node)) dropdown.open = false;
+      });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+          document
+            .querySelectorAll<HTMLDetailsElement>('details.nav-dropdown')
+            .forEach((el) => (el.open = false));
+          toggle?.setAttribute('aria-expanded', 'false');
+          document
+            .querySelector('.main-navigation')
+            ?.classList.remove('is-open');
+        }
+      });
+    </script>
+  </body>
+</html>
