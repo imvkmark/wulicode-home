@@ -67,20 +67,6 @@
 .reading-link { display: flex; gap: 15px; align-items: center; margin-top: 22px; font-size: 11px; color: var(--vp-c-brand-1); }
 .VPNavBarTitle .title { gap: 10px; font-weight: 650; letter-spacing: -.4px; }
 .VPNavBarTitle .logo { max-width: 120px; object-fit: contain; }
-.vp-doc { font-size: 16px; }
-.vp-doc p, .vp-doc li { line-height: 1.9; }
-.vp-doc h1 { line-height: 1.5; letter-spacing: -.7px; }
-.vp-doc h2 { margin-top: 44px; padding-top: 28px; line-height: 1.5; }
-.vp-doc h3 { margin-top: 30px; line-height: 1.6; }
-.vp-doc div[class*='language-'] { border: 1px solid var(--vp-c-divider); border-radius: 8px; }
-.vp-doc div[class*='language-'] code { line-height: 1.75; }
-.vp-doc :not(pre) > code { border-radius: 4px; }
-.vp-doc blockquote { border-left: 3px solid var(--vp-c-brand-1); background: var(--vp-c-bg-soft); border-radius: 0 6px 6px 0; padding: 10px 16px; }
-.vp-doc blockquote > p { margin: 0; }
-.VPSidebarItem .item { border-radius: 5px; }
-.VPSidebarItem.is-active > .item { background: var(--vp-c-brand-soft); }
-.VPSidebarItem.is-active > .item > .link { padding-left: 8px; }
-@media (min-width: 960px) { .VPDoc.has-aside .content-container { max-width: 740px; } }
 @media (max-width: 959px) {
     .home-intro { padding: 56px 0 40px; }
     .topic-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }

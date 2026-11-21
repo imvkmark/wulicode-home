@@ -1,5 +1,6 @@
 import DefaultTheme from 'vitepress/theme';
 import './custom.css';
+import './doc.css';
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 import 'viewerjs/dist/viewer.min.css';
 import imageViewer from 'vitepress-plugin-image-viewer';

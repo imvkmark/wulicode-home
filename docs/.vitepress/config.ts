@@ -126,9 +126,10 @@ const vitePressConfig = {
         siteTitle: 'Wulicode',
         outline: {
             level: 'deep',
-            label: '大纲'
+            label: '本页目录'
         },
-        lastUpdated: {},
+        lastUpdated: { text: '最后更新' },
+        docFooter: { prev: '上一篇', next: '下一篇' },
         search: {
             provider: 'algolia',
             options: {
