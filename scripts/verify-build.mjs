@@ -74,7 +74,7 @@ for (const file of [
   assert.ok(fs.existsSync(`dist/${file}`), `Missing ${file}`);
 // Check every sitemap entry against the actual output and canonical routes.
 const expectedSitemap = new Set(
-  [...getPages().map((page) => page.url), '/articles.html'].map(
+  ['/', ...getPages().map((page) => page.url), '/articles.html'].map(
     (url) => new URL(url, 'https://www.wulicode.com').href,
   ),
 );

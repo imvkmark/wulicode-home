@@ -4,7 +4,7 @@ import { getPages } from './src/lib/content.mjs';
 
 // Astro's inferred dynamic routes omit the legacy .html suffix.
 const canonicalPages = new Set(
-  [...getPages().map((page) => page.url), '/articles.html'].map(
+  ['/', ...getPages().map((page) => page.url), '/articles.html'].map(
     (url) => new URL(url, 'https://www.wulicode.com').href,
   ),
 );
