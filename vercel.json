@@ -4,5 +4,4342 @@
   "buildCommand": "pnpm build",
   "outputDirectory": "dist",
   "installCommand": "pnpm install --frozen-lockfile",
-  "cleanUrls": false
+  "cleanUrls": false,
+  "redirects": [
+    {
+      "source": "/about/index/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/ai/claude-code/01-can",
+      "destination": "/ai/claude-code/01-can.html",
+      "permanent": true
+    },
+    {
+      "source": "/ai/claude-code/02-with",
+      "destination": "/ai/claude-code/02-with.html",
+      "permanent": true
+    },
+    {
+      "source": "/ai/claude-code/03-use",
+      "destination": "/ai/claude-code/03-use.html",
+      "permanent": true
+    },
+    {
+      "source": "/ai/claude-code/04-auto",
+      "destination": "/ai/claude-code/04-auto.html",
+      "permanent": true
+    },
+    {
+      "source": "/ai/claude-code/05-engineering",
+      "destination": "/ai/claude-code/05-engineering.html",
+      "permanent": true
+    },
+    {
+      "source": "/ai/claude-code/get-started",
+      "destination": "/ai/claude-code/get-started.html",
+      "permanent": true
+    },
+    {
+      "source": "/ai/claude-code/index/",
+      "destination": "/ai/claude-code/",
+      "permanent": true
+    },
+    {
+      "source": "/ai/extend-reading/gstack",
+      "destination": "/ai/extend-reading/gstack.html",
+      "permanent": true
+    },
+    {
+      "source": "/ai/extend-reading/index/",
+      "destination": "/ai/extend-reading/",
+      "permanent": true
+    },
+    {
+      "source": "/ai/extend-reading/omc-get-started",
+      "destination": "/ai/extend-reading/omc-get-started.html",
+      "permanent": true
+    },
+    {
+      "source": "/ai/extend-reading/ralph-wiggum-introduction",
+      "destination": "/ai/extend-reading/ralph-wiggum-introduction.html",
+      "permanent": true
+    },
+    {
+      "source": "/ai/index/",
+      "destination": "/ai/",
+      "permanent": true
+    },
+    {
+      "source": "/ai/openspec/1-core",
+      "destination": "/ai/openspec/1-core.html",
+      "permanent": true
+    },
+    {
+      "source": "/ai/openspec/2-install-and-init",
+      "destination": "/ai/openspec/2-install-and-init.html",
+      "permanent": true
+    },
+    {
+      "source": "/ai/openspec/3-directory-struct-core-concept",
+      "destination": "/ai/openspec/3-directory-struct-core-concept.html",
+      "permanent": true
+    },
+    {
+      "source": "/ai/openspec/4-core-workflow-opsx",
+      "destination": "/ai/openspec/4-core-workflow-opsx.html",
+      "permanent": true
+    },
+    {
+      "source": "/ai/openspec/5-delta-spec",
+      "destination": "/ai/openspec/5-delta-spec.html",
+      "permanent": true
+    },
+    {
+      "source": "/ai/openspec/6-cli-custom",
+      "destination": "/ai/openspec/6-cli-custom.html",
+      "permanent": true
+    },
+    {
+      "source": "/ai/openspec/7-with-claude-code-sample",
+      "destination": "/ai/openspec/7-with-claude-code-sample.html",
+      "permanent": true
+    },
+    {
+      "source": "/ai/openspec/index/",
+      "destination": "/ai/openspec/",
+      "permanent": true
+    },
+    {
+      "source": "/ai/primer/awesome",
+      "destination": "/ai/primer/awesome.html",
+      "permanent": true
+    },
+    {
+      "source": "/ai/primer/development-flow",
+      "destination": "/ai/primer/development-flow.html",
+      "permanent": true
+    },
+    {
+      "source": "/ai/primer/index/",
+      "destination": "/ai/primer/",
+      "permanent": true
+    },
+    {
+      "source": "/arch/index/",
+      "destination": "/arch/",
+      "permanent": true
+    },
+    {
+      "source": "/arch/primer/awesome",
+      "destination": "/arch/primer/awesome.html",
+      "permanent": true
+    },
+    {
+      "source": "/arch/primer/index/",
+      "destination": "/arch/primer/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/index/",
+      "destination": "/back-end/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/core/1-introduction",
+      "destination": "/back-end/java/core/1-introduction.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/core/12-concurrency",
+      "destination": "/back-end/java/core/12-concurrency.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/core/2-setup-of-the-program-environment",
+      "destination": "/back-end/java/core/2-setup-of-the-program-environment.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/core/3-basic-struct",
+      "destination": "/back-end/java/core/3-basic-struct.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/core/4-object-and-class",
+      "destination": "/back-end/java/core/4-object-and-class.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/core/5-inheritance",
+      "destination": "/back-end/java/core/5-inheritance.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/core/6-interface-lambda",
+      "destination": "/back-end/java/core/6-interface-lambda.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/core/7-exception-and-log",
+      "destination": "/back-end/java/core/7-exception-and-log.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/core/8-generics",
+      "destination": "/back-end/java/core/8-generics.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/core/9-collection",
+      "destination": "/back-end/java/core/9-collection.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/core/index/",
+      "destination": "/back-end/java/core/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/extend-reading/faq",
+      "destination": "/back-end/java/extend-reading/faq.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/extend-reading/index/",
+      "destination": "/back-end/java/extend-reading/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/gradle/1-about",
+      "destination": "/back-end/java/gradle/1-about.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/gradle/2-quickstart",
+      "destination": "/back-end/java/gradle/2-quickstart.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/gradle/6-dependencies",
+      "destination": "/back-end/java/gradle/6-dependencies.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/gradle/index/",
+      "destination": "/back-end/java/gradle/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/index/",
+      "destination": "/back-end/java/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/junit/1-overview",
+      "destination": "/back-end/java/junit/1-overview.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/junit/2-write-tests",
+      "destination": "/back-end/java/junit/2-write-tests.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/junit/index/",
+      "destination": "/back-end/java/junit/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/primer/1-install-get-started",
+      "destination": "/back-end/java/primer/1-install-get-started.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/primer/2-basic-types",
+      "destination": "/back-end/java/primer/2-basic-types.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/primer/3-var-modifier",
+      "destination": "/back-end/java/primer/3-var-modifier.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/primer/4-math-loop",
+      "destination": "/back-end/java/primer/4-math-loop.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/primer/5-defined-class",
+      "destination": "/back-end/java/primer/5-defined-class.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/primer/idea-plugin-faq",
+      "destination": "/back-end/java/primer/idea-plugin-faq.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/primer/index/",
+      "destination": "/back-end/java/primer/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/primer/install-use-jdk",
+      "destination": "/back-end/java/primer/install-use-jdk.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/primer/jenv-java-environment--version-manager.html",
+      "destination": "/back-end/java/primer/jenv-java-environment-version-manager.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/primer/jenv-java-environment-version-manager",
+      "destination": "/back-end/java/primer/jenv-java-environment-version-manager.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/primer/live-templates",
+      "destination": "/back-end/java/primer/live-templates.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/refs/base/index/",
+      "destination": "/back-end/java/refs/base/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/refs/base/lang-math",
+      "destination": "/back-end/java/refs/base/lang-math.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/refs/base/lang-runnable",
+      "destination": "/back-end/java/refs/base/lang-runnable.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/refs/base/lang-strict-math",
+      "destination": "/back-end/java/refs/base/lang-strict-math.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/refs/base/lang-string",
+      "destination": "/back-end/java/refs/base/lang-string.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/refs/basic/enum",
+      "destination": "/back-end/java/refs/basic/enum.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/refs/basic/index/",
+      "destination": "/back-end/java/refs/basic/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/refs/desktop/awt-actionevent",
+      "destination": "/back-end/java/refs/desktop/awt-actionevent.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/refs/desktop/awt-eventqueue",
+      "destination": "/back-end/java/refs/desktop/awt-eventqueue.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/refs/desktop/index/",
+      "destination": "/back-end/java/refs/desktop/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/refs/desktop/jwt",
+      "destination": "/back-end/java/refs/desktop/jwt.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/refs/desktop/swing",
+      "destination": "/back-end/java/refs/desktop/swing.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/refs/desktop/swing-imageicon",
+      "destination": "/back-end/java/refs/desktop/swing-imageicon.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/refs/desktop/swing-jfilechooser",
+      "destination": "/back-end/java/refs/desktop/swing-jfilechooser.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/refs/desktop/swing-jframe",
+      "destination": "/back-end/java/refs/desktop/swing-jframe.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/refs/desktop/swing-jlable",
+      "destination": "/back-end/java/refs/desktop/swing-jlable.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/refs/desktop/swing-jmenu",
+      "destination": "/back-end/java/refs/desktop/swing-jmenu.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/refs/desktop/swing-jmenubar",
+      "destination": "/back-end/java/refs/desktop/swing-jmenubar.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/refs/desktop/swing-jmenuitem",
+      "destination": "/back-end/java/refs/desktop/swing-jmenuitem.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/refs/index/",
+      "destination": "/back-end/java/refs/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/refs/pom",
+      "destination": "/back-end/java/refs/pom.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/refs/settings",
+      "destination": "/back-end/java/refs/settings.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/guide/build-in-web-server",
+      "destination": "/back-end/java/spring-boot/guide/build-in-web-server.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/guide/index/",
+      "destination": "/back-end/java/spring-boot/guide/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/guide/no-sql",
+      "destination": "/back-end/java/spring-boot/guide/no-sql.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/guide/property-setting",
+      "destination": "/back-end/java/spring-boot/guide/property-setting.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/guide/spring-mvc",
+      "destination": "/back-end/java/spring-boot/guide/spring-mvc.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/guide/springboot-application",
+      "destination": "/back-end/java/spring-boot/guide/springboot-application.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/guide/testing",
+      "destination": "/back-end/java/spring-boot/guide/testing.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/index/",
+      "destination": "/back-end/java/spring-boot/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/other/index/",
+      "destination": "/back-end/java/spring-boot/other/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/other/micro-services",
+      "destination": "/back-end/java/spring-boot/other/micro-services.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/overview",
+      "destination": "/back-end/java/spring-boot/overview.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/refs/core-features/aop",
+      "destination": "/back-end/java/spring-boot/refs/core-features/aop.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/refs/core-features/create-auto-configuration",
+      "destination": "/back-end/java/spring-boot/refs/core-features/create-auto-configuration.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/refs/core-features/crontab",
+      "destination": "/back-end/java/spring-boot/refs/core-features/crontab.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/refs/core-features/i18n",
+      "destination": "/back-end/java/spring-boot/refs/core-features/i18n.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/refs/core-features/index/",
+      "destination": "/back-end/java/spring-boot/refs/core-features/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/refs/core-features/json",
+      "destination": "/back-end/java/spring-boot/refs/core-features/json.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/refs/core-features/kotlin",
+      "destination": "/back-end/java/spring-boot/refs/core-features/kotlin.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/refs/core-features/log",
+      "destination": "/back-end/java/spring-boot/refs/core-features/log.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/refs/core-features/on-development",
+      "destination": "/back-end/java/spring-boot/refs/core-features/on-development.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/refs/core-features/profiles",
+      "destination": "/back-end/java/spring-boot/refs/core-features/profiles.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/refs/core-features/setting-externalization",
+      "destination": "/back-end/java/spring-boot/refs/core-features/setting-externalization.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/refs/core-features/spring-application",
+      "destination": "/back-end/java/spring-boot/refs/core-features/spring-application.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/refs/core-features/ssl",
+      "destination": "/back-end/java/spring-boot/refs/core-features/ssl.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/refs/index/",
+      "destination": "/back-end/java/spring-boot/refs/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/refs/usage/beans",
+      "destination": "/back-end/java/spring-boot/refs/usage/beans.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/refs/usage/build-system",
+      "destination": "/back-end/java/spring-boot/refs/usage/build-system.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/refs/usage/building",
+      "destination": "/back-end/java/spring-boot/refs/usage/building.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/refs/usage/devtools",
+      "destination": "/back-end/java/spring-boot/refs/usage/devtools.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/refs/usage/index/",
+      "destination": "/back-end/java/spring-boot/refs/usage/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/refs/usage/org-code-arch",
+      "destination": "/back-end/java/spring-boot/refs/usage/org-code-arch.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/refs/usage/run-application",
+      "destination": "/back-end/java/spring-boot/refs/usage/run-application.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/refs/usage/setting",
+      "destination": "/back-end/java/spring-boot/refs/usage/setting.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/refs/usage/spring-boot-application-annotation",
+      "destination": "/back-end/java/spring-boot/refs/usage/spring-boot-application-annotation.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/tutorial/develop-your-first-springboot",
+      "destination": "/back-end/java/spring-boot/tutorial/develop-your-first-springboot.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/java/spring-boot/tutorial/index/",
+      "destination": "/back-end/java/spring-boot/tutorial/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/composer/create-psr4-package",
+      "destination": "/back-end/php/composer/create-psr4-package.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/composer/index/",
+      "destination": "/back-end/php/composer/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/composer/install",
+      "destination": "/back-end/php/composer/install.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/composer/packeton",
+      "destination": "/back-end/php/composer/packeton.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/composer/path-repo",
+      "destination": "/back-end/php/composer/path-repo.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/composer/satis-build-packagist",
+      "destination": "/back-end/php/composer/satis-build-packagist.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/faq/crypto-use-rsa",
+      "destination": "/back-end/php/faq/crypto-use-rsa.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/faq/crypto-xor",
+      "destination": "/back-end/php/faq/crypto-xor.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/faq/datetime-weekday-calc",
+      "destination": "/back-end/php/faq/datetime-weekday-calc.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/faq/dom-use",
+      "destination": "/back-end/php/faq/dom-use.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/faq/index/",
+      "destination": "/back-end/php/faq/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/faq/lang-tips",
+      "destination": "/back-end/php/faq/lang-tips.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/faq/lang-use-ternary-operator",
+      "destination": "/back-end/php/faq/lang-use-ternary-operator.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/faq/lang-variable-math-int-force-convert",
+      "destination": "/back-end/php/faq/lang-variable-math-int-force-convert.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/faq/output-instance",
+      "destination": "/back-end/php/faq/output-instance.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/index/",
+      "destination": "/back-end/php/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/faq/eloquent-migrate",
+      "destination": "/back-end/php/laravel/faq/eloquent-migrate.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/faq/index/",
+      "destination": "/back-end/php/laravel/faq/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/faq/tips",
+      "destination": "/back-end/php/laravel/faq/tips.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/index/",
+      "destination": "/back-end/php/laravel/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/packages/developer-tz-laravel-5-simple-captcha",
+      "destination": "/back-end/php/laravel/packages/developer-tz-laravel-5-simple-captcha.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/packages/development",
+      "destination": "/back-end/php/laravel/packages/development.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/packages/dingo-api",
+      "destination": "/back-end/php/laravel/packages/dingo-api.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/packages/index/",
+      "destination": "/back-end/php/laravel/packages/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/packages/itsgoingd-clockwork",
+      "destination": "/back-end/php/laravel/packages/itsgoingd-clockwork.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/packages/laravel-excel-v3",
+      "destination": "/back-end/php/laravel/packages/laravel-excel-v3.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/packages/laravelcollective-html",
+      "destination": "/back-end/php/laravel/packages/laravelcollective-html.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/packages/send-mail-use-beauty-mail",
+      "destination": "/back-end/php/laravel/packages/send-mail-use-beauty-mail.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/primer/artisan",
+      "destination": "/back-end/php/laravel/primer/artisan.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/primer/awesome",
+      "destination": "/back-end/php/laravel/primer/awesome.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/primer/cookie",
+      "destination": "/back-end/php/laravel/primer/cookie.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/primer/event",
+      "destination": "/back-end/php/laravel/primer/event.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/primer/form-requests",
+      "destination": "/back-end/php/laravel/primer/form-requests.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/primer/index/",
+      "destination": "/back-end/php/laravel/primer/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/primer/learn-notebook",
+      "destination": "/back-end/php/laravel/primer/learn-notebook.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/primer/middleware",
+      "destination": "/back-end/php/laravel/primer/middleware.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/primer/mix-3.0",
+      "destination": "/back-end/php/laravel/primer/mix-3.0.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/primer/mix-4.0",
+      "destination": "/back-end/php/laravel/primer/mix-4.0.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/primer/service-provider",
+      "destination": "/back-end/php/laravel/primer/service-provider.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/primer/session",
+      "destination": "/back-end/php/laravel/primer/session.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/primer/upgrade-logs",
+      "destination": "/back-end/php/laravel/primer/upgrade-logs.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/refs/api-throttle-login-limits",
+      "destination": "/back-end/php/laravel/refs/api-throttle-login-limits.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/refs/core-request-life-cycle",
+      "destination": "/back-end/php/laravel/refs/core-request-life-cycle.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/refs/core-service-provider",
+      "destination": "/back-end/php/laravel/refs/core-service-provider.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/refs/db-setting-with-redis",
+      "destination": "/back-end/php/laravel/refs/db-setting-with-redis.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/refs/index/",
+      "destination": "/back-end/php/laravel/refs/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/refs/model-trait-usage",
+      "destination": "/back-end/php/laravel/refs/model-trait-usage.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/refs/reading-application-make",
+      "destination": "/back-end/php/laravel/refs/reading-application-make.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/refs/reading-entrance",
+      "destination": "/back-end/php/laravel/refs/reading-entrance.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/laravel/refs/reading-init-app",
+      "destination": "/back-end/php/laravel/refs/reading-init-app.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/packages/carbon-carbon",
+      "destination": "/back-end/php/packages/carbon-carbon.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/packages/code-lts-doctum",
+      "destination": "/back-end/php/packages/code-lts-doctum.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/packages/fzaninotto-faker",
+      "destination": "/back-end/php/packages/fzaninotto-faker.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/packages/index/",
+      "destination": "/back-end/php/packages/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/packages/roave-security-advisories",
+      "destination": "/back-end/php/packages/roave-security-advisories.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/packages/vlucas-phpdotenv",
+      "destination": "/back-end/php/packages/vlucas-phpdotenv.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/primer/awesome",
+      "destination": "/back-end/php/primer/awesome.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/primer/cli",
+      "destination": "/back-end/php/primer/cli.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/primer/index/",
+      "destination": "/back-end/php/primer/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/primer/install-extension-use-pecl",
+      "destination": "/back-end/php/primer/install-extension-use-pecl.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/primer/install-lnmp-at-centos7",
+      "destination": "/back-end/php/primer/install-lnmp-at-centos7.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/primer/install-lnmp-at-mac",
+      "destination": "/back-end/php/primer/install-lnmp-at-mac.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/primer/install-lnmp-at-rocky",
+      "destination": "/back-end/php/primer/install-lnmp-at-rocky.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/primer/phpstorm-phpunit-with-testsuit",
+      "destination": "/back-end/php/primer/phpstorm-phpunit-with-testsuit.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/primer/phpstorm-plugin-faq",
+      "destination": "/back-end/php/primer/phpstorm-plugin-faq.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/primer/phpstorm-setting-for-laravel",
+      "destination": "/back-end/php/primer/phpstorm-setting-for-laravel.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/primer/phpstorm-xdebug",
+      "destination": "/back-end/php/primer/phpstorm-xdebug.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/primer/use-clockwork",
+      "destination": "/back-end/php/primer/use-clockwork.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/basic/apd",
+      "destination": "/back-end/php/refs/basic/apd.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/basic/bcompiler",
+      "destination": "/back-end/php/refs/basic/bcompiler.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/basic/error-handler",
+      "destination": "/back-end/php/refs/basic/error-handler.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/basic/htscanner",
+      "destination": "/back-end/php/refs/basic/htscanner.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/basic/index/",
+      "destination": "/back-end/php/refs/basic/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/basic/output",
+      "destination": "/back-end/php/refs/basic/output.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/basic/weakref",
+      "destination": "/back-end/php/refs/basic/weakref.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/benchmarking/inclued",
+      "destination": "/back-end/php/refs/benchmarking/inclued.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/benchmarking/index/",
+      "destination": "/back-end/php/refs/benchmarking/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/caching/apc",
+      "destination": "/back-end/php/refs/caching/apc.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/caching/chdb",
+      "destination": "/back-end/php/refs/caching/chdb.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/caching/index/",
+      "destination": "/back-end/php/refs/caching/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/calendar/calendar",
+      "destination": "/back-end/php/refs/calendar/calendar.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/calendar/datetime",
+      "destination": "/back-end/php/refs/calendar/datetime.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/calendar/index/",
+      "destination": "/back-end/php/refs/calendar/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/compression/bzip2",
+      "destination": "/back-end/php/refs/compression/bzip2.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/compression/index/",
+      "destination": "/back-end/php/refs/compression/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/compression/lzf",
+      "destination": "/back-end/php/refs/compression/lzf.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/compression/phar",
+      "destination": "/back-end/php/refs/compression/phar.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/compression/rar",
+      "destination": "/back-end/php/refs/compression/rar.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/compression/zip",
+      "destination": "/back-end/php/refs/compression/zip.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/compression/zlib",
+      "destination": "/back-end/php/refs/compression/zlib.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/crypto/crack",
+      "destination": "/back-end/php/refs/crypto/crack.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/crypto/hash",
+      "destination": "/back-end/php/refs/crypto/hash.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/crypto/index/",
+      "destination": "/back-end/php/refs/crypto/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/crypto/mcrypt",
+      "destination": "/back-end/php/refs/crypto/mcrypt.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/crypto/mhash",
+      "destination": "/back-end/php/refs/crypto/mhash.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/crypto/openssl",
+      "destination": "/back-end/php/refs/crypto/openssl.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/database/dba",
+      "destination": "/back-end/php/refs/database/dba.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/database/dbx",
+      "destination": "/back-end/php/refs/database/dbx.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/database/index/",
+      "destination": "/back-end/php/refs/database/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/database/mysqli",
+      "destination": "/back-end/php/refs/database/mysqli.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/database/pdo",
+      "destination": "/back-end/php/refs/database/pdo.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/file-process/direct-io",
+      "destination": "/back-end/php/refs/file-process/direct-io.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/file-process/directories",
+      "destination": "/back-end/php/refs/file-process/directories.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/file-process/fileinfo",
+      "destination": "/back-end/php/refs/file-process/fileinfo.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/file-process/filesystem",
+      "destination": "/back-end/php/refs/file-process/filesystem.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/file-process/index/",
+      "destination": "/back-end/php/refs/file-process/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/i18n/enchant",
+      "destination": "/back-end/php/refs/i18n/enchant.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/i18n/gettext",
+      "destination": "/back-end/php/refs/i18n/gettext.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/i18n/iconv",
+      "destination": "/back-end/php/refs/i18n/iconv.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/i18n/index/",
+      "destination": "/back-end/php/refs/i18n/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/i18n/intl",
+      "destination": "/back-end/php/refs/i18n/intl.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/image/cairo",
+      "destination": "/back-end/php/refs/image/cairo.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/image/exif",
+      "destination": "/back-end/php/refs/image/exif.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/image/index/",
+      "destination": "/back-end/php/refs/image/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/index/",
+      "destination": "/back-end/php/refs/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/mail/cyrus",
+      "destination": "/back-end/php/refs/mail/cyrus.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/mail/index/",
+      "destination": "/back-end/php/refs/mail/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/math/bcmath",
+      "destination": "/back-end/php/refs/math/bcmath.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/math/index/",
+      "destination": "/back-end/php/refs/math/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/math/math",
+      "destination": "/back-end/php/refs/math/math.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/other/amqp",
+      "destination": "/back-end/php/refs/other/amqp.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/other/curl",
+      "destination": "/back-end/php/refs/other/curl.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/other/index/",
+      "destination": "/back-end/php/refs/other/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/other/interface",
+      "destination": "/back-end/php/refs/other/interface.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/other/iterator",
+      "destination": "/back-end/php/refs/other/iterator.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/other/json",
+      "destination": "/back-end/php/refs/other/json.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/other/misc",
+      "destination": "/back-end/php/refs/other/misc.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/other/network",
+      "destination": "/back-end/php/refs/other/network.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/other/spl-class",
+      "destination": "/back-end/php/refs/other/spl-class.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/other/spl-standard",
+      "destination": "/back-end/php/refs/other/spl-standard.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/other/urls",
+      "destination": "/back-end/php/refs/other/urls.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/other/yaml",
+      "destination": "/back-end/php/refs/other/yaml.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/packages/endroy-snoopy",
+      "destination": "/back-end/php/refs/packages/endroy-snoopy.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/packages/index/",
+      "destination": "/back-end/php/refs/packages/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/payment/index/",
+      "destination": "/back-end/php/refs/payment/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/payment/spplus",
+      "destination": "/back-end/php/refs/payment/spplus.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/process/eio",
+      "destination": "/back-end/php/refs/process/eio.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/process/index/",
+      "destination": "/back-end/php/refs/process/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/server/apache",
+      "destination": "/back-end/php/refs/server/apache.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/server/index/",
+      "destination": "/back-end/php/refs/server/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/text/bbcode",
+      "destination": "/back-end/php/refs/text/bbcode.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/text/index/",
+      "destination": "/back-end/php/refs/text/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/text/pcre",
+      "destination": "/back-end/php/refs/text/pcre.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/text/posix",
+      "destination": "/back-end/php/refs/text/posix.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/text/string",
+      "destination": "/back-end/php/refs/text/string.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/vartype/array",
+      "destination": "/back-end/php/refs/vartype/array.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/vartype/ctype",
+      "destination": "/back-end/php/refs/vartype/ctype.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/vartype/filter",
+      "destination": "/back-end/php/refs/vartype/filter.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/vartype/function-handling",
+      "destination": "/back-end/php/refs/vartype/function-handling.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/vartype/index/",
+      "destination": "/back-end/php/refs/vartype/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/vartype/variable-handling",
+      "destination": "/back-end/php/refs/vartype/variable-handling.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/xml/dom",
+      "destination": "/back-end/php/refs/xml/dom.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/refs/xml/index/",
+      "destination": "/back-end/php/refs/xml/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/testing/index/",
+      "destination": "/back-end/php/testing/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/testing/phpstorm-setting-for-phpunit",
+      "destination": "/back-end/php/testing/phpstorm-setting-for-phpunit.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/testing/phpunit-introduction",
+      "destination": "/back-end/php/testing/phpunit-introduction.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/php/testing/run-phpunit-in-phpstorm",
+      "destination": "/back-end/php/testing/run-phpunit-in-phpstorm.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/python/extend-reading/faq",
+      "destination": "/back-end/python/extend-reading/faq.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/python/extend-reading/getopts-parse-bash",
+      "destination": "/back-end/python/extend-reading/getopts-parse-bash.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/python/extend-reading/index/",
+      "destination": "/back-end/python/extend-reading/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/python/extend-reading/name-main",
+      "destination": "/back-end/python/extend-reading/name-main.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/python/extend-reading/requirement-usage",
+      "destination": "/back-end/python/extend-reading/requirement-usage.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/python/extend-reading/setup-py",
+      "destination": "/back-end/python/extend-reading/setup-py.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/python/extend-reading/sphinx-write-document",
+      "destination": "/back-end/python/extend-reading/sphinx-write-document.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/python/index/",
+      "destination": "/back-end/python/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/python/packages/index/",
+      "destination": "/back-end/python/packages/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/python/packages/pydash-document",
+      "destination": "/back-end/python/packages/pydash-document.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/python/primer/index/",
+      "destination": "/back-end/python/primer/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/python/primer/install-at-centos",
+      "destination": "/back-end/python/primer/install-at-centos.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/python/primer/pipenv-get-started",
+      "destination": "/back-end/python/primer/pipenv-get-started.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/python/primer/pycharm-base-setting",
+      "destination": "/back-end/python/primer/pycharm-base-setting.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/python/primer/pyenv-get-started",
+      "destination": "/back-end/python/primer/pyenv-get-started.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/python/primer/use-mirror-to-speed",
+      "destination": "/back-end/python/primer/use-mirror-to-speed.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/python/primer/uv-get-started",
+      "destination": "/back-end/python/primer/uv-get-started.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/python/python-manual/1-qa",
+      "destination": "/back-end/python/python-manual/1-qa.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/python/python-manual/2-3-run",
+      "destination": "/back-end/python/python-manual/2-3-run.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/python/python-manual/4-object-type",
+      "destination": "/back-end/python/python-manual/4-object-type.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/python/python-manual/5-int",
+      "destination": "/back-end/python/python-manual/5-int.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/python/python-manual/index/",
+      "destination": "/back-end/python/python-manual/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/python/refs/index/",
+      "destination": "/back-end/python/refs/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/python/refs/library/index/",
+      "destination": "/back-end/python/refs/library/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/python/refs/library/urllib",
+      "destination": "/back-end/python/refs/library/urllib.html",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/ruby/index/",
+      "destination": "/back-end/ruby/",
+      "permanent": true
+    },
+    {
+      "source": "/back-end/ruby/install-at-mac",
+      "destination": "/back-end/ruby/install-at-mac.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/index/",
+      "destination": "/database/",
+      "permanent": true
+    },
+    {
+      "source": "/database/mongo/index/",
+      "destination": "/database/mongo/",
+      "permanent": true
+    },
+    {
+      "source": "/database/mongo/install-at-mac",
+      "destination": "/database/mongo/install-at-mac.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/mysql/cookbook/client",
+      "destination": "/database/mysql/cookbook/client.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/mysql/cookbook/date-time",
+      "destination": "/database/mysql/cookbook/date-time.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/mysql/cookbook/dump-import",
+      "destination": "/database/mysql/cookbook/dump-import.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/mysql/cookbook/function",
+      "destination": "/database/mysql/cookbook/function.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/mysql/cookbook/index/",
+      "destination": "/database/mysql/cookbook/",
+      "permanent": true
+    },
+    {
+      "source": "/database/mysql/cookbook/query",
+      "destination": "/database/mysql/cookbook/query.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/mysql/cookbook/sql-statements",
+      "destination": "/database/mysql/cookbook/sql-statements.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/mysql/cookbook/string",
+      "destination": "/database/mysql/cookbook/string.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/mysql/cookbook/table-manage",
+      "destination": "/database/mysql/cookbook/table-manage.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/mysql/extend-reading/faq",
+      "destination": "/database/mysql/extend-reading/faq.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/mysql/extend-reading/index/",
+      "destination": "/database/mysql/extend-reading/",
+      "permanent": true
+    },
+    {
+      "source": "/database/mysql/extend-reading/mysql-data-directory-modify",
+      "destination": "/database/mysql/extend-reading/mysql-data-directory-modify.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/mysql/extend-reading/optimize-explain",
+      "destination": "/database/mysql/extend-reading/optimize-explain.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/mysql/index/",
+      "destination": "/database/mysql/",
+      "permanent": true
+    },
+    {
+      "source": "/database/mysql/percona/index/",
+      "destination": "/database/mysql/percona/",
+      "permanent": true
+    },
+    {
+      "source": "/database/mysql/percona/xtrabackup-usage",
+      "destination": "/database/mysql/percona/xtrabackup-usage.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/primer/datagrip-faq",
+      "destination": "/database/primer/datagrip-faq.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/primer/index/",
+      "destination": "/database/primer/",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/bitmap/bitcount",
+      "destination": "/database/redis/docs/bitmap/bitcount.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/bitmap/bitfield",
+      "destination": "/database/redis/docs/bitmap/bitfield.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/bitmap/bitop",
+      "destination": "/database/redis/docs/bitmap/bitop.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/bitmap/bitpos",
+      "destination": "/database/redis/docs/bitmap/bitpos.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/bitmap/getbit",
+      "destination": "/database/redis/docs/bitmap/getbit.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/bitmap/index/",
+      "destination": "/database/redis/docs/bitmap/",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/bitmap/setbit",
+      "destination": "/database/redis/docs/bitmap/setbit.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/client_and_server/auth",
+      "destination": "/database/redis/docs/client_and_server/auth.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/client_and_server/client_getname",
+      "destination": "/database/redis/docs/client_and_server/client_getname.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/client_and_server/client_kill",
+      "destination": "/database/redis/docs/client_and_server/client_kill.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/client_and_server/client_list",
+      "destination": "/database/redis/docs/client_and_server/client_list.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/client_and_server/client_setname",
+      "destination": "/database/redis/docs/client_and_server/client_setname.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/client_and_server/index/",
+      "destination": "/database/redis/docs/client_and_server/",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/client_and_server/info",
+      "destination": "/database/redis/docs/client_and_server/info.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/client_and_server/quit",
+      "destination": "/database/redis/docs/client_and_server/quit.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/client_and_server/shutdown",
+      "destination": "/database/redis/docs/client_and_server/shutdown.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/client_and_server/time",
+      "destination": "/database/redis/docs/client_and_server/time.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/cluster/cluster_addslots",
+      "destination": "/database/redis/docs/cluster/cluster_addslots.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/cluster/cluster_count_failure_reports",
+      "destination": "/database/redis/docs/cluster/cluster_count_failure_reports.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/cluster/cluster_countkeysinslot",
+      "destination": "/database/redis/docs/cluster/cluster_countkeysinslot.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/cluster/cluster_delslots",
+      "destination": "/database/redis/docs/cluster/cluster_delslots.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/cluster/cluster_failover",
+      "destination": "/database/redis/docs/cluster/cluster_failover.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/cluster/cluster_forget",
+      "destination": "/database/redis/docs/cluster/cluster_forget.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/cluster/cluster_getkeysinslot",
+      "destination": "/database/redis/docs/cluster/cluster_getkeysinslot.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/cluster/cluster_info",
+      "destination": "/database/redis/docs/cluster/cluster_info.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/cluster/cluster_keyslot",
+      "destination": "/database/redis/docs/cluster/cluster_keyslot.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/cluster/cluster_meet",
+      "destination": "/database/redis/docs/cluster/cluster_meet.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/cluster/cluster_nodes",
+      "destination": "/database/redis/docs/cluster/cluster_nodes.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/cluster/cluster_replicate",
+      "destination": "/database/redis/docs/cluster/cluster_replicate.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/cluster/cluster_reset",
+      "destination": "/database/redis/docs/cluster/cluster_reset.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/cluster/cluster_saveconfig",
+      "destination": "/database/redis/docs/cluster/cluster_saveconfig.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/cluster/cluster_set_config_epoch",
+      "destination": "/database/redis/docs/cluster/cluster_set_config_epoch.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/cluster/cluster_setslot",
+      "destination": "/database/redis/docs/cluster/cluster_setslot.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/cluster/cluster_slaves",
+      "destination": "/database/redis/docs/cluster/cluster_slaves.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/cluster/cluster_slots",
+      "destination": "/database/redis/docs/cluster/cluster_slots.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/cluster/index/",
+      "destination": "/database/redis/docs/cluster/",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/cluster/readonly",
+      "destination": "/database/redis/docs/cluster/readonly.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/cluster/readwrite",
+      "destination": "/database/redis/docs/cluster/readwrite.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/configure/config_get",
+      "destination": "/database/redis/docs/configure/config_get.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/configure/config_resetstat",
+      "destination": "/database/redis/docs/configure/config_resetstat.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/configure/config_rewrite",
+      "destination": "/database/redis/docs/configure/config_rewrite.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/configure/config_set",
+      "destination": "/database/redis/docs/configure/config_set.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/configure/index/",
+      "destination": "/database/redis/docs/configure/",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/database/dbsize",
+      "destination": "/database/redis/docs/database/dbsize.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/database/del",
+      "destination": "/database/redis/docs/database/del.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/database/exists",
+      "destination": "/database/redis/docs/database/exists.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/database/flushall",
+      "destination": "/database/redis/docs/database/flushall.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/database/flushdb",
+      "destination": "/database/redis/docs/database/flushdb.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/database/index/",
+      "destination": "/database/redis/docs/database/",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/database/keys",
+      "destination": "/database/redis/docs/database/keys.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/database/move",
+      "destination": "/database/redis/docs/database/move.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/database/randomkey",
+      "destination": "/database/redis/docs/database/randomkey.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/database/rename",
+      "destination": "/database/redis/docs/database/rename.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/database/renamenx",
+      "destination": "/database/redis/docs/database/renamenx.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/database/scan",
+      "destination": "/database/redis/docs/database/scan.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/database/select",
+      "destination": "/database/redis/docs/database/select.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/database/sort",
+      "destination": "/database/redis/docs/database/sort.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/database/swapdb",
+      "destination": "/database/redis/docs/database/swapdb.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/database/type",
+      "destination": "/database/redis/docs/database/type.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/debug/debug_object",
+      "destination": "/database/redis/docs/debug/debug_object.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/debug/debug_segfault",
+      "destination": "/database/redis/docs/debug/debug_segfault.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/debug/echo",
+      "destination": "/database/redis/docs/debug/echo.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/debug/index/",
+      "destination": "/database/redis/docs/debug/",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/debug/monitor",
+      "destination": "/database/redis/docs/debug/monitor.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/debug/object",
+      "destination": "/database/redis/docs/debug/object.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/debug/ping",
+      "destination": "/database/redis/docs/debug/ping.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/debug/slowlog",
+      "destination": "/database/redis/docs/debug/slowlog.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/expire/expire",
+      "destination": "/database/redis/docs/expire/expire.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/expire/expireat",
+      "destination": "/database/redis/docs/expire/expireat.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/expire/index/",
+      "destination": "/database/redis/docs/expire/",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/expire/persist",
+      "destination": "/database/redis/docs/expire/persist.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/expire/pexpire",
+      "destination": "/database/redis/docs/expire/pexpire.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/expire/pexpireat",
+      "destination": "/database/redis/docs/expire/pexpireat.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/expire/pttl",
+      "destination": "/database/redis/docs/expire/pttl.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/expire/ttl",
+      "destination": "/database/redis/docs/expire/ttl.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/geo/geoadd",
+      "destination": "/database/redis/docs/geo/geoadd.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/geo/geodist",
+      "destination": "/database/redis/docs/geo/geodist.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/geo/geohash",
+      "destination": "/database/redis/docs/geo/geohash.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/geo/geopos",
+      "destination": "/database/redis/docs/geo/geopos.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/geo/georadius",
+      "destination": "/database/redis/docs/geo/georadius.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/geo/georadiusbymember",
+      "destination": "/database/redis/docs/geo/georadiusbymember.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/geo/index/",
+      "destination": "/database/redis/docs/geo/",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/hash/hdel",
+      "destination": "/database/redis/docs/hash/hdel.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/hash/hexists",
+      "destination": "/database/redis/docs/hash/hexists.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/hash/hget",
+      "destination": "/database/redis/docs/hash/hget.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/hash/hgetall",
+      "destination": "/database/redis/docs/hash/hgetall.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/hash/hincrby",
+      "destination": "/database/redis/docs/hash/hincrby.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/hash/hincrbyfloat",
+      "destination": "/database/redis/docs/hash/hincrbyfloat.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/hash/hkeys",
+      "destination": "/database/redis/docs/hash/hkeys.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/hash/hlen",
+      "destination": "/database/redis/docs/hash/hlen.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/hash/hmget",
+      "destination": "/database/redis/docs/hash/hmget.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/hash/hmset",
+      "destination": "/database/redis/docs/hash/hmset.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/hash/hscan",
+      "destination": "/database/redis/docs/hash/hscan.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/hash/hset",
+      "destination": "/database/redis/docs/hash/hset.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/hash/hsetnx",
+      "destination": "/database/redis/docs/hash/hsetnx.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/hash/hstrlen",
+      "destination": "/database/redis/docs/hash/hstrlen.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/hash/hvals",
+      "destination": "/database/redis/docs/hash/hvals.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/hash/index/",
+      "destination": "/database/redis/docs/hash/",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/hyperloglog/index/",
+      "destination": "/database/redis/docs/hyperloglog/",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/hyperloglog/pfadd",
+      "destination": "/database/redis/docs/hyperloglog/pfadd.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/hyperloglog/pfcount",
+      "destination": "/database/redis/docs/hyperloglog/pfcount.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/hyperloglog/pfmerge",
+      "destination": "/database/redis/docs/hyperloglog/pfmerge.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/index/",
+      "destination": "/database/redis/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/internal/dump",
+      "destination": "/database/redis/docs/internal/dump.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/internal/index/",
+      "destination": "/database/redis/docs/internal/",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/internal/migrate",
+      "destination": "/database/redis/docs/internal/migrate.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/internal/psync",
+      "destination": "/database/redis/docs/internal/psync.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/internal/restore",
+      "destination": "/database/redis/docs/internal/restore.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/internal/sync",
+      "destination": "/database/redis/docs/internal/sync.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/list/blpop",
+      "destination": "/database/redis/docs/list/blpop.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/list/brpop",
+      "destination": "/database/redis/docs/list/brpop.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/list/brpoplpush",
+      "destination": "/database/redis/docs/list/brpoplpush.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/list/index/",
+      "destination": "/database/redis/docs/list/",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/list/lindex",
+      "destination": "/database/redis/docs/list/lindex.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/list/linsert",
+      "destination": "/database/redis/docs/list/linsert.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/list/llen",
+      "destination": "/database/redis/docs/list/llen.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/list/lpop",
+      "destination": "/database/redis/docs/list/lpop.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/list/lpush",
+      "destination": "/database/redis/docs/list/lpush.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/list/lpushx",
+      "destination": "/database/redis/docs/list/lpushx.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/list/lrange",
+      "destination": "/database/redis/docs/list/lrange.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/list/lrem",
+      "destination": "/database/redis/docs/list/lrem.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/list/lset",
+      "destination": "/database/redis/docs/list/lset.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/list/ltrim",
+      "destination": "/database/redis/docs/list/ltrim.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/list/rpop",
+      "destination": "/database/redis/docs/list/rpop.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/list/rpoplpush",
+      "destination": "/database/redis/docs/list/rpoplpush.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/list/rpush",
+      "destination": "/database/redis/docs/list/rpush.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/list/rpushx",
+      "destination": "/database/redis/docs/list/rpushx.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/persistence/bgrewriteaof",
+      "destination": "/database/redis/docs/persistence/bgrewriteaof.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/persistence/bgsave",
+      "destination": "/database/redis/docs/persistence/bgsave.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/persistence/index/",
+      "destination": "/database/redis/docs/persistence/",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/persistence/lastsave",
+      "destination": "/database/redis/docs/persistence/lastsave.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/persistence/save",
+      "destination": "/database/redis/docs/persistence/save.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/pubsub/index/",
+      "destination": "/database/redis/docs/pubsub/",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/pubsub/psubscribe",
+      "destination": "/database/redis/docs/pubsub/psubscribe.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/pubsub/publish",
+      "destination": "/database/redis/docs/pubsub/publish.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/pubsub/pubsub",
+      "destination": "/database/redis/docs/pubsub/pubsub.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/pubsub/punsubscribe",
+      "destination": "/database/redis/docs/pubsub/punsubscribe.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/pubsub/subscribe",
+      "destination": "/database/redis/docs/pubsub/subscribe.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/pubsub/unsubscribe",
+      "destination": "/database/redis/docs/pubsub/unsubscribe.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/replication/index/",
+      "destination": "/database/redis/docs/replication/",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/replication/role",
+      "destination": "/database/redis/docs/replication/role.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/replication/slaveof",
+      "destination": "/database/redis/docs/replication/slaveof.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/script/eval",
+      "destination": "/database/redis/docs/script/eval.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/script/evalsha",
+      "destination": "/database/redis/docs/script/evalsha.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/script/index/",
+      "destination": "/database/redis/docs/script/",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/script/script_exists",
+      "destination": "/database/redis/docs/script/script_exists.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/script/script_flush",
+      "destination": "/database/redis/docs/script/script_flush.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/script/script_kill",
+      "destination": "/database/redis/docs/script/script_kill.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/script/script_load",
+      "destination": "/database/redis/docs/script/script_load.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sentinel/index/",
+      "destination": "/database/redis/docs/sentinel/",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sentinel/sentinel_ckquorum",
+      "destination": "/database/redis/docs/sentinel/sentinel_ckquorum.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sentinel/sentinel_failover",
+      "destination": "/database/redis/docs/sentinel/sentinel_failover.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sentinel/sentinel_flushconfig",
+      "destination": "/database/redis/docs/sentinel/sentinel_flushconfig.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sentinel/sentinel_get_master_addr_by_name",
+      "destination": "/database/redis/docs/sentinel/sentinel_get_master_addr_by_name.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sentinel/sentinel_master",
+      "destination": "/database/redis/docs/sentinel/sentinel_master.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sentinel/sentinel_masters",
+      "destination": "/database/redis/docs/sentinel/sentinel_masters.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sentinel/sentinel_monitor",
+      "destination": "/database/redis/docs/sentinel/sentinel_monitor.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sentinel/sentinel_remove",
+      "destination": "/database/redis/docs/sentinel/sentinel_remove.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sentinel/sentinel_reset",
+      "destination": "/database/redis/docs/sentinel/sentinel_reset.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sentinel/sentinel_sentinels",
+      "destination": "/database/redis/docs/sentinel/sentinel_sentinels.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sentinel/sentinel_set",
+      "destination": "/database/redis/docs/sentinel/sentinel_set.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sentinel/sentinel_slaves",
+      "destination": "/database/redis/docs/sentinel/sentinel_slaves.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/set/index/",
+      "destination": "/database/redis/docs/set/",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/set/sadd",
+      "destination": "/database/redis/docs/set/sadd.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/set/scard",
+      "destination": "/database/redis/docs/set/scard.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/set/sdiff",
+      "destination": "/database/redis/docs/set/sdiff.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/set/sdiffstore",
+      "destination": "/database/redis/docs/set/sdiffstore.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/set/sinter",
+      "destination": "/database/redis/docs/set/sinter.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/set/sinterstore",
+      "destination": "/database/redis/docs/set/sinterstore.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/set/sismember",
+      "destination": "/database/redis/docs/set/sismember.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/set/smembers",
+      "destination": "/database/redis/docs/set/smembers.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/set/smove",
+      "destination": "/database/redis/docs/set/smove.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/set/spop",
+      "destination": "/database/redis/docs/set/spop.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/set/srandmember",
+      "destination": "/database/redis/docs/set/srandmember.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/set/srem",
+      "destination": "/database/redis/docs/set/srem.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/set/sscan",
+      "destination": "/database/redis/docs/set/sscan.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/set/sunion",
+      "destination": "/database/redis/docs/set/sunion.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/set/sunionstore",
+      "destination": "/database/redis/docs/set/sunionstore.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sorted_set/index/",
+      "destination": "/database/redis/docs/sorted_set/",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sorted_set/zadd",
+      "destination": "/database/redis/docs/sorted_set/zadd.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sorted_set/zcard",
+      "destination": "/database/redis/docs/sorted_set/zcard.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sorted_set/zcount",
+      "destination": "/database/redis/docs/sorted_set/zcount.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sorted_set/zincrby",
+      "destination": "/database/redis/docs/sorted_set/zincrby.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sorted_set/zinterstore",
+      "destination": "/database/redis/docs/sorted_set/zinterstore.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sorted_set/zlexcount",
+      "destination": "/database/redis/docs/sorted_set/zlexcount.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sorted_set/zrange",
+      "destination": "/database/redis/docs/sorted_set/zrange.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sorted_set/zrangebylex",
+      "destination": "/database/redis/docs/sorted_set/zrangebylex.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sorted_set/zrangebyscore",
+      "destination": "/database/redis/docs/sorted_set/zrangebyscore.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sorted_set/zrank",
+      "destination": "/database/redis/docs/sorted_set/zrank.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sorted_set/zrem",
+      "destination": "/database/redis/docs/sorted_set/zrem.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sorted_set/zremrangebylex",
+      "destination": "/database/redis/docs/sorted_set/zremrangebylex.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sorted_set/zremrangebyrank",
+      "destination": "/database/redis/docs/sorted_set/zremrangebyrank.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sorted_set/zremrangebyscore",
+      "destination": "/database/redis/docs/sorted_set/zremrangebyscore.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sorted_set/zrevrange",
+      "destination": "/database/redis/docs/sorted_set/zrevrange.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sorted_set/zrevrangebyscore",
+      "destination": "/database/redis/docs/sorted_set/zrevrangebyscore.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sorted_set/zrevrank",
+      "destination": "/database/redis/docs/sorted_set/zrevrank.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sorted_set/zscan",
+      "destination": "/database/redis/docs/sorted_set/zscan.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sorted_set/zscore",
+      "destination": "/database/redis/docs/sorted_set/zscore.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/sorted_set/zunionstore",
+      "destination": "/database/redis/docs/sorted_set/zunionstore.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/string/append",
+      "destination": "/database/redis/docs/string/append.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/string/decr",
+      "destination": "/database/redis/docs/string/decr.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/string/decrby",
+      "destination": "/database/redis/docs/string/decrby.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/string/get",
+      "destination": "/database/redis/docs/string/get.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/string/getrange",
+      "destination": "/database/redis/docs/string/getrange.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/string/getset",
+      "destination": "/database/redis/docs/string/getset.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/string/incr",
+      "destination": "/database/redis/docs/string/incr.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/string/incrby",
+      "destination": "/database/redis/docs/string/incrby.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/string/incrbyfloat",
+      "destination": "/database/redis/docs/string/incrbyfloat.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/string/index/",
+      "destination": "/database/redis/docs/string/",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/string/mget",
+      "destination": "/database/redis/docs/string/mget.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/string/mset",
+      "destination": "/database/redis/docs/string/mset.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/string/msetnx",
+      "destination": "/database/redis/docs/string/msetnx.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/string/psetex",
+      "destination": "/database/redis/docs/string/psetex.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/string/set",
+      "destination": "/database/redis/docs/string/set.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/string/setex",
+      "destination": "/database/redis/docs/string/setex.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/string/setnx",
+      "destination": "/database/redis/docs/string/setnx.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/string/setrange",
+      "destination": "/database/redis/docs/string/setrange.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/string/strlen",
+      "destination": "/database/redis/docs/string/strlen.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/topic/cluster-spec",
+      "destination": "/database/redis/docs/topic/cluster-spec.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/topic/cluster-tutorial",
+      "destination": "/database/redis/docs/topic/cluster-tutorial.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/topic/index/",
+      "destination": "/database/redis/docs/topic/",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/topic/notification",
+      "destination": "/database/redis/docs/topic/notification.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/topic/persistence",
+      "destination": "/database/redis/docs/topic/persistence.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/topic/protocol",
+      "destination": "/database/redis/docs/topic/protocol.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/topic/pubsub",
+      "destination": "/database/redis/docs/topic/pubsub.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/topic/replication",
+      "destination": "/database/redis/docs/topic/replication.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/topic/sentinel",
+      "destination": "/database/redis/docs/topic/sentinel.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/topic/transaction",
+      "destination": "/database/redis/docs/topic/transaction.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/transaction/discard",
+      "destination": "/database/redis/docs/transaction/discard.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/transaction/exec",
+      "destination": "/database/redis/docs/transaction/exec.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/transaction/index/",
+      "destination": "/database/redis/docs/transaction/",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/transaction/multi",
+      "destination": "/database/redis/docs/transaction/multi.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/transaction/unwatch",
+      "destination": "/database/redis/docs/transaction/unwatch.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/docs/transaction/watch",
+      "destination": "/database/redis/docs/transaction/watch.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/extend-reading/faq",
+      "destination": "/database/redis/extend-reading/faq.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/extend-reading/hscan-count-invalid",
+      "destination": "/database/redis/extend-reading/hscan-count-invalid.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/extend-reading/index/",
+      "destination": "/database/redis/extend-reading/",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/ha/1-command-data",
+      "destination": "/database/redis/ha/1-command-data.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/ha/10-cluster",
+      "destination": "/database/redis/ha/10-cluster.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/ha/11-cluster-trib",
+      "destination": "/database/redis/ha/11-cluster-trib.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/ha/12-cluster",
+      "destination": "/database/redis/ha/12-cluster.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/ha/13-cache",
+      "destination": "/database/redis/ha/13-cache.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/ha/2-string",
+      "destination": "/database/redis/ha/2-string.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/ha/3-hash",
+      "destination": "/database/redis/ha/3-hash.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/ha/4-list-set",
+      "destination": "/database/redis/ha/4-list-set.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/ha/5-query-pipline-sub",
+      "destination": "/database/redis/ha/5-query-pipline-sub.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/ha/6-bitmap-hyperloglog-geo",
+      "destination": "/database/redis/ha/6-bitmap-hyperloglog-geo.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/ha/7-persistence",
+      "destination": "/database/redis/ha/7-persistence.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/ha/8-replication",
+      "destination": "/database/redis/ha/8-replication.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/ha/9-sentinel",
+      "destination": "/database/redis/ha/9-sentinel.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/ha/index/",
+      "destination": "/database/redis/ha/",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/index/",
+      "destination": "/database/redis/",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/primer/common-usage",
+      "destination": "/database/redis/primer/common-usage.html",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/primer/index/",
+      "destination": "/database/redis/primer/",
+      "permanent": true
+    },
+    {
+      "source": "/database/redis/primer/install-at-rhel",
+      "destination": "/database/redis/primer/install-at-rhel.html",
+      "permanent": true
+    },
+    {
+      "source": "/design/audio-video/awesome",
+      "destination": "/design/audio-video/awesome.html",
+      "permanent": true
+    },
+    {
+      "source": "/design/audio-video/index/",
+      "destination": "/design/audio-video/",
+      "permanent": true
+    },
+    {
+      "source": "/design/index/",
+      "destination": "/design/",
+      "permanent": true
+    },
+    {
+      "source": "/design/ui/ab-test-at-ui",
+      "destination": "/design/ui/ab-test-at-ui.html",
+      "permanent": true
+    },
+    {
+      "source": "/design/ui/awesome",
+      "destination": "/design/ui/awesome.html",
+      "permanent": true
+    },
+    {
+      "source": "/design/ui/b-client-intract",
+      "destination": "/design/ui/b-client-intract.html",
+      "permanent": true
+    },
+    {
+      "source": "/design/ui/index/",
+      "destination": "/design/ui/",
+      "permanent": true
+    },
+    {
+      "source": "/development/git/cheat-sheet",
+      "destination": "/development/git/cheat-sheet.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/git/commit-grace-use-husky",
+      "destination": "/development/git/commit-grace-use-husky.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/git/commit-message-log-guide",
+      "destination": "/development/git/commit-message-log-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/git/crlf-return-character",
+      "destination": "/development/git/crlf-return-character.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/git/extend-reading/faq",
+      "destination": "/development/git/extend-reading/faq.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/git/extend-reading/index/",
+      "destination": "/development/git/extend-reading/",
+      "permanent": true
+    },
+    {
+      "source": "/development/git/git-flow",
+      "destination": "/development/git/git-flow.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/git/git-flow-for-development",
+      "destination": "/development/git/git-flow-for-development.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/git/github/index/",
+      "destination": "/development/git/github/",
+      "permanent": true
+    },
+    {
+      "source": "/development/git/github/issue",
+      "destination": "/development/git/github/issue.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/git/gitignore",
+      "destination": "/development/git/gitignore.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/git/index/",
+      "destination": "/development/git/",
+      "permanent": true
+    },
+    {
+      "source": "/development/git/primer/awesome-addon",
+      "destination": "/development/git/primer/awesome-addon.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/git/primer/awesome-github",
+      "destination": "/development/git/primer/awesome-github.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/git/primer/index/",
+      "destination": "/development/git/primer/",
+      "permanent": true
+    },
+    {
+      "source": "/development/git/subtree",
+      "destination": "/development/git/subtree.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/git/use-git-manage-code",
+      "destination": "/development/git/use-git-manage-code.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/http/cache",
+      "destination": "/development/http/cache.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/http/domain-pollution-risk",
+      "destination": "/development/http/domain-pollution-risk.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/http/extend-reading/faq",
+      "destination": "/development/http/extend-reading/faq.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/http/extend-reading/index/",
+      "destination": "/development/http/extend-reading/",
+      "permanent": true
+    },
+    {
+      "source": "/development/http/index/",
+      "destination": "/development/http/",
+      "permanent": true
+    },
+    {
+      "source": "/development/index/",
+      "destination": "/development/",
+      "permanent": true
+    },
+    {
+      "source": "/development/regex/index/",
+      "destination": "/development/regex/",
+      "permanent": true
+    },
+    {
+      "source": "/development/regex/manual",
+      "destination": "/development/regex/manual.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/regex/zh-match",
+      "destination": "/development/regex/zh-match.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/roadmap/index/",
+      "destination": "/development/roadmap/",
+      "permanent": true
+    },
+    {
+      "source": "/development/roadmap/version-control",
+      "destination": "/development/roadmap/version-control.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/testing/index/",
+      "destination": "/development/testing/",
+      "permanent": true
+    },
+    {
+      "source": "/development/testing/seldom-get-started",
+      "destination": "/development/testing/seldom-get-started.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/tools/awesome",
+      "destination": "/development/tools/awesome.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/tools/charles-get-started",
+      "destination": "/development/tools/charles-get-started.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/tools/fiddle-usage",
+      "destination": "/development/tools/fiddle-usage.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/tools/ide-sublime-text-faq",
+      "destination": "/development/tools/ide-sublime-text-faq.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/tools/index/",
+      "destination": "/development/tools/",
+      "permanent": true
+    },
+    {
+      "source": "/development/tools/jetbrains/copyright",
+      "destination": "/development/tools/jetbrains/copyright.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/tools/jetbrains/deployment",
+      "destination": "/development/tools/jetbrains/deployment.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/tools/jetbrains/faq",
+      "destination": "/development/tools/jetbrains/faq.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/tools/jetbrains/faq-tips",
+      "destination": "/development/tools/jetbrains/faq-tips.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/tools/jetbrains/index/",
+      "destination": "/development/tools/jetbrains/",
+      "permanent": true
+    },
+    {
+      "source": "/development/tools/jetbrains/svn",
+      "destination": "/development/tools/jetbrains/svn.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/tools/sdkman",
+      "destination": "/development/tools/sdkman.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/tools/spec/index/",
+      "destination": "/development/tools/spec/",
+      "permanent": true
+    },
+    {
+      "source": "/development/tools/spec/jwt",
+      "destination": "/development/tools/spec/jwt.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/tools/spec/semver",
+      "destination": "/development/tools/spec/semver.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/tools/vscode/faq",
+      "destination": "/development/tools/vscode/faq.html",
+      "permanent": true
+    },
+    {
+      "source": "/development/tools/vscode/index/",
+      "destination": "/development/tools/vscode/",
+      "permanent": true
+    },
+    {
+      "source": "/development/tools/vscode/snippets-usage",
+      "destination": "/development/tools/vscode/snippets-usage.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/app/android/index/",
+      "destination": "/front-end/app/android/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/app/android/primer/build-with-gradle",
+      "destination": "/front-end/app/android/primer/build-with-gradle.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/app/android/primer/index/",
+      "destination": "/front-end/app/android/primer/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/app/android/primer/install-at-macos",
+      "destination": "/front-end/app/android/primer/install-at-macos.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/app/dart/index/",
+      "destination": "/front-end/app/dart/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/app/dart/refs/1-introduction",
+      "destination": "/front-end/app/dart/refs/1-introduction.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/app/dart/refs/2-language-tour",
+      "destination": "/front-end/app/dart/refs/2-language-tour.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/app/dart/refs/index/",
+      "destination": "/front-end/app/dart/refs/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/app/dart/refs/testing-introduction",
+      "destination": "/front-end/app/dart/refs/testing-introduction.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/app/extend-reading/index/",
+      "destination": "/front-end/app/extend-reading/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/app/extend-reading/standard-for-crash-rate",
+      "destination": "/front-end/app/extend-reading/standard-for-crash-rate.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/app/flutter/index/",
+      "destination": "/front-end/app/flutter/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/app/flutter/primer/index/",
+      "destination": "/front-end/app/flutter/primer/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/app/flutter/primer/install",
+      "destination": "/front-end/app/flutter/primer/install.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/app/index/",
+      "destination": "/front-end/app/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/app/ios/extend-reading/faq",
+      "destination": "/front-end/app/ios/extend-reading/faq.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/app/ios/extend-reading/index/",
+      "destination": "/front-end/app/ios/extend-reading/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/app/ios/index/",
+      "destination": "/front-end/app/ios/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/app/ios/primer/cocoapods",
+      "destination": "/front-end/app/ios/primer/cocoapods.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/app/ios/primer/index/",
+      "destination": "/front-end/app/ios/primer/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/app/ios/primer/universal-links",
+      "destination": "/front-end/app/ios/primer/universal-links.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/index/",
+      "destination": "/front-end/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/javascript/extend-reading/build-live-reload-framework",
+      "destination": "/front-end/javascript/extend-reading/build-live-reload-framework.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/javascript/extend-reading/cors-intro",
+      "destination": "/front-end/javascript/extend-reading/cors-intro.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/javascript/extend-reading/element-client-offset",
+      "destination": "/front-end/javascript/extend-reading/element-client-offset.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/javascript/extend-reading/how-to-check-null-in-javascript",
+      "destination": "/front-end/javascript/extend-reading/how-to-check-null-in-javascript.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/javascript/extend-reading/index/",
+      "destination": "/front-end/javascript/extend-reading/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/javascript/extend-reading/jsdoc-write-js-document",
+      "destination": "/front-end/javascript/extend-reading/jsdoc-write-js-document.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/javascript/extend-reading/use-sentry-collect-trace-and-exception",
+      "destination": "/front-end/javascript/extend-reading/use-sentry-collect-trace-and-exception.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/javascript/index/",
+      "destination": "/front-end/javascript/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/javascript/npm/index/",
+      "destination": "/front-end/javascript/npm/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/javascript/npm/npm-faq",
+      "destination": "/front-end/javascript/npm/npm-faq.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/javascript/npm/npm-introduction",
+      "destination": "/front-end/javascript/npm/npm-introduction.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/javascript/npm/npm-package-json",
+      "destination": "/front-end/javascript/npm/npm-package-json.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/javascript/npm/npm-version-control",
+      "destination": "/front-end/javascript/npm/npm-version-control.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/javascript/npm/nvm-manage-multi-version-node",
+      "destination": "/front-end/javascript/npm/nvm-manage-multi-version-node.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/javascript/npm/pnpm-introduction",
+      "destination": "/front-end/javascript/npm/pnpm-introduction.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/javascript/npm/use-npm-mirror",
+      "destination": "/front-end/javascript/npm/use-npm-mirror.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/javascript/npm/yarn-get-started",
+      "destination": "/front-end/javascript/npm/yarn-get-started.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/javascript/packages/apidoc",
+      "destination": "/front-end/javascript/packages/apidoc.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/javascript/packages/axios",
+      "destination": "/front-end/javascript/packages/axios.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/javascript/packages/browsersync",
+      "destination": "/front-end/javascript/packages/browsersync.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/javascript/packages/eslint",
+      "destination": "/front-end/javascript/packages/eslint.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/javascript/packages/index/",
+      "destination": "/front-end/javascript/packages/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/javascript/primer/awesome",
+      "destination": "/front-end/javascript/primer/awesome.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/javascript/primer/index/",
+      "destination": "/front-end/javascript/primer/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/javascript/primer/install-node-at-rhel",
+      "destination": "/front-end/javascript/primer/install-node-at-rhel.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/javascript/primer/install-node-at-ubuntu",
+      "destination": "/front-end/javascript/primer/install-node-at-ubuntu.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/javascript/primer/webstorm-faq",
+      "destination": "/front-end/javascript/primer/webstorm-faq.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/roadmap/a11y",
+      "destination": "/front-end/roadmap/a11y.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/roadmap/auth",
+      "destination": "/front-end/roadmap/auth.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/roadmap/awesome",
+      "destination": "/front-end/roadmap/awesome.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/roadmap/code-hosting",
+      "destination": "/front-end/roadmap/code-hosting.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/roadmap/css",
+      "destination": "/front-end/roadmap/css.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/roadmap/css-framework",
+      "destination": "/front-end/roadmap/css-framework.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/roadmap/deploy",
+      "destination": "/front-end/roadmap/deploy.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/roadmap/design-system",
+      "destination": "/front-end/roadmap/design-system.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/roadmap/desktop-control",
+      "destination": "/front-end/roadmap/desktop-control.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/roadmap/graphql",
+      "destination": "/front-end/roadmap/graphql.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/roadmap/index/",
+      "destination": "/front-end/roadmap/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/roadmap/internet",
+      "destination": "/front-end/roadmap/internet.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/roadmap/packaging",
+      "destination": "/front-end/roadmap/packaging.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/roadmap/performance",
+      "destination": "/front-end/roadmap/performance.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/roadmap/pwa",
+      "destination": "/front-end/roadmap/pwa.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/roadmap/ssg",
+      "destination": "/front-end/roadmap/ssg.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/roadmap/ssr",
+      "destination": "/front-end/roadmap/ssr.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/roadmap/testing",
+      "destination": "/front-end/roadmap/testing.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/roadmap/type-checking",
+      "destination": "/front-end/roadmap/type-checking.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/roadmap/web-component",
+      "destination": "/front-end/roadmap/web-component.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/roadmap/web-safe",
+      "destination": "/front-end/roadmap/web-safe.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/web/css/extend-reading/faq",
+      "destination": "/front-end/web/css/extend-reading/faq.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/web/css/extend-reading/index/",
+      "destination": "/front-end/web/css/extend-reading/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/web/css/index/",
+      "destination": "/front-end/web/css/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/web/dom/extend-reading/faq",
+      "destination": "/front-end/web/dom/extend-reading/faq.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/web/dom/extend-reading/index/",
+      "destination": "/front-end/web/dom/extend-reading/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/web/dom/index/",
+      "destination": "/front-end/web/dom/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/web/extend-reading/best-practice-for-speeding-website",
+      "destination": "/front-end/web/extend-reading/best-practice-for-speeding-website.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/web/extend-reading/debug-with-browser-at-mac",
+      "destination": "/front-end/web/extend-reading/debug-with-browser-at-mac.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/web/extend-reading/index/",
+      "destination": "/front-end/web/extend-reading/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/web/framework/index/",
+      "destination": "/front-end/web/framework/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/web/framework/nuxt/async-use-nuxt-app",
+      "destination": "/front-end/web/framework/nuxt/async-use-nuxt-app.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/web/framework/nuxt/index/",
+      "destination": "/front-end/web/framework/nuxt/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/web/framework/taro/faq",
+      "destination": "/front-end/web/framework/taro/faq.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/web/framework/taro/index/",
+      "destination": "/front-end/web/framework/taro/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/web/framework/tdesign/index/",
+      "destination": "/front-end/web/framework/tdesign/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/web/framework/tdesign/tdesign-snippets",
+      "destination": "/front-end/web/framework/tdesign/tdesign-snippets.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/web/framework/vite/build-library-with-multi-entry-points",
+      "destination": "/front-end/web/framework/vite/build-library-with-multi-entry-points.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/web/framework/vite/index/",
+      "destination": "/front-end/web/framework/vite/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/web/framework/vitepress/index/",
+      "destination": "/front-end/web/framework/vitepress/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/web/framework/vitepress/tdesign-snippets",
+      "destination": "/front-end/web/framework/vitepress/tdesign-snippets.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/web/html/favicon",
+      "destination": "/front-end/web/html/favicon.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/web/html/index/",
+      "destination": "/front-end/web/html/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/web/index/",
+      "destination": "/front-end/web/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/web/react/extend-reading/index/",
+      "destination": "/front-end/web/react/extend-reading/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/web/react/index/",
+      "destination": "/front-end/web/react/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/web/react/primer/index/",
+      "destination": "/front-end/web/react/primer/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/web/vue/extend-reading/faq",
+      "destination": "/front-end/web/vue/extend-reading/faq.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/web/vue/extend-reading/i18n",
+      "destination": "/front-end/web/vue/extend-reading/i18n.html",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/web/vue/extend-reading/index/",
+      "destination": "/front-end/web/vue/extend-reading/",
+      "permanent": true
+    },
+    {
+      "source": "/front-end/web/vue/index/",
+      "destination": "/front-end/web/vue/",
+      "permanent": true
+    },
+    {
+      "source": "/ops/aliyun/index/",
+      "destination": "/ops/aliyun/",
+      "permanent": true
+    },
+    {
+      "source": "/ops/aliyun/sts-assume-role",
+      "destination": "/ops/aliyun/sts-assume-role.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/bash/faq",
+      "destination": "/ops/bash/faq.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/bash/index/",
+      "destination": "/ops/bash/",
+      "permanent": true
+    },
+    {
+      "source": "/ops/bash/install-at-mac",
+      "destination": "/ops/bash/install-at-mac.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/bash/refs/1-basic",
+      "destination": "/ops/bash/refs/1-basic.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/bash/refs/2-command",
+      "destination": "/ops/bash/refs/2-command.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/bash/refs/3-variables",
+      "destination": "/ops/bash/refs/3-variables.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/bash/refs/4-string",
+      "destination": "/ops/bash/refs/4-string.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/bash/refs/5-arithmetic",
+      "destination": "/ops/bash/refs/5-arithmetic.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/bash/refs/6-condition",
+      "destination": "/ops/bash/refs/6-condition.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/bash/refs/7-loop",
+      "destination": "/ops/bash/refs/7-loop.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/bash/refs/8-function",
+      "destination": "/ops/bash/refs/8-function.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/bash/refs/9-array",
+      "destination": "/ops/bash/refs/9-array.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/bash/refs/index/",
+      "destination": "/ops/bash/refs/",
+      "permanent": true
+    },
+    {
+      "source": "/ops/canal-deployer.html",
+      "destination": "/ops/canal/deployer.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/canal/client-adapter",
+      "destination": "/ops/canal/client-adapter.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/canal/client-adapter-es",
+      "destination": "/ops/canal/client-adapter-es.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/canal/deployer",
+      "destination": "/ops/canal/deployer.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/canal/get-started",
+      "destination": "/ops/canal/get-started.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/canal/index/",
+      "destination": "/ops/canal/",
+      "permanent": true
+    },
+    {
+      "source": "/ops/canal/install",
+      "destination": "/ops/canal/install.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/curl/access-another-host",
+      "destination": "/ops/curl/access-another-host.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/curl/index/",
+      "destination": "/ops/curl/",
+      "permanent": true
+    },
+    {
+      "source": "/ops/curl/upgrade-at-rhel",
+      "destination": "/ops/curl/upgrade-at-rhel.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/docker/index/",
+      "destination": "/ops/docker/",
+      "permanent": true
+    },
+    {
+      "source": "/ops/elastic-search/index/",
+      "destination": "/ops/elastic-search/",
+      "permanent": true
+    },
+    {
+      "source": "/ops/elastic-search/install-at-rhel",
+      "destination": "/ops/elastic-search/install-at-rhel.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/elastic-search/install-plugin-ik",
+      "destination": "/ops/elastic-search/install-plugin-ik.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/elastic-search/install-use-docker",
+      "destination": "/ops/elastic-search/install-use-docker.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/elastic-search/query-schema",
+      "destination": "/ops/elastic-search/query-schema.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/elastic-search/usage",
+      "destination": "/ops/elastic-search/usage.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/index/",
+      "destination": "/ops/",
+      "permanent": true
+    },
+    {
+      "source": "/ops/linux/base/crontab",
+      "destination": "/ops/linux/base/crontab.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/linux/base/index/",
+      "destination": "/ops/linux/base/",
+      "permanent": true
+    },
+    {
+      "source": "/ops/linux/base/logrotate",
+      "destination": "/ops/linux/base/logrotate.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/linux/base/user-with-group",
+      "destination": "/ops/linux/base/user-with-group.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/linux/extend-reading/index/",
+      "destination": "/ops/linux/extend-reading/",
+      "permanent": true
+    },
+    {
+      "source": "/ops/linux/extend-reading/load-average",
+      "destination": "/ops/linux/extend-reading/load-average.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/linux/index/",
+      "destination": "/ops/linux/",
+      "permanent": true
+    },
+    {
+      "source": "/ops/linux/rhel/centos7-upgrade",
+      "destination": "/ops/linux/rhel/centos7-upgrade.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/linux/rhel/faq",
+      "destination": "/ops/linux/rhel/faq.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/linux/rhel/firewalld",
+      "destination": "/ops/linux/rhel/firewalld.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/linux/rhel/index/",
+      "destination": "/ops/linux/rhel/",
+      "permanent": true
+    },
+    {
+      "source": "/ops/linux/rhel/install-zh-cn-langpack",
+      "destination": "/ops/linux/rhel/install-zh-cn-langpack.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/linux/rhel/quick-shell",
+      "destination": "/ops/linux/rhel/quick-shell.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/linux/rhel/set-hostname",
+      "destination": "/ops/linux/rhel/set-hostname.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/linux/rhel/view-version",
+      "destination": "/ops/linux/rhel/view-version.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/linux/rhel/yum-repo-introduction",
+      "destination": "/ops/linux/rhel/yum-repo-introduction.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/mac/awesome",
+      "destination": "/ops/mac/awesome.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/mac/crontab-plist",
+      "destination": "/ops/mac/crontab-plist.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/mac/faq",
+      "destination": "/ops/mac/faq.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/mac/homebrew",
+      "destination": "/ops/mac/homebrew.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/mac/index/",
+      "destination": "/ops/mac/",
+      "permanent": true
+    },
+    {
+      "source": "/ops/mac/omz",
+      "destination": "/ops/mac/omz.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/mac/setting-env-variables",
+      "destination": "/ops/mac/setting-env-variables.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/mac/use-automator-add-keymap",
+      "destination": "/ops/mac/use-automator-add-keymap.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/man/command/ab-1",
+      "destination": "/ops/man/command/ab-1.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/man/command/ac-1",
+      "destination": "/ops/man/command/ac-1.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/man/command/autojump-1",
+      "destination": "/ops/man/command/autojump-1.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/man/command/chmod-1",
+      "destination": "/ops/man/command/chmod-1.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/man/command/chown-1",
+      "destination": "/ops/man/command/chown-1.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/man/command/curl-1",
+      "destination": "/ops/man/command/curl-1.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/man/command/ffmpeg-1",
+      "destination": "/ops/man/command/ffmpeg-1.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/man/command/grep-1",
+      "destination": "/ops/man/command/grep-1.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/man/command/index/",
+      "destination": "/ops/man/command/",
+      "permanent": true
+    },
+    {
+      "source": "/ops/man/command/localectl-1",
+      "destination": "/ops/man/command/localectl-1.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/man/command/mvn-1",
+      "destination": "/ops/man/command/mvn-1.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/man/command/sed-1",
+      "destination": "/ops/man/command/sed-1.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/man/command/ssh-add-1",
+      "destination": "/ops/man/command/ssh-add-1.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/man/command/ssh-keygen-1",
+      "destination": "/ops/man/command/ssh-keygen-1.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/man/command/tee-1",
+      "destination": "/ops/man/command/tee-1.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/man/command/truncate-1",
+      "destination": "/ops/man/command/truncate-1.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/man/command/yum-config-manager-1",
+      "destination": "/ops/man/command/yum-config-manager-1.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/man/conf/index/",
+      "destination": "/ops/man/conf/",
+      "permanent": true
+    },
+    {
+      "source": "/ops/man/conf/nscd-conf-5",
+      "destination": "/ops/man/conf/nscd-conf-5.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/man/extend-reading/index/",
+      "destination": "/ops/man/extend-reading/",
+      "permanent": true
+    },
+    {
+      "source": "/ops/man/extend-reading/socat",
+      "destination": "/ops/man/extend-reading/socat.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/man/index/",
+      "destination": "/ops/man/",
+      "permanent": true
+    },
+    {
+      "source": "/ops/man/other/index/",
+      "destination": "/ops/man/other/",
+      "permanent": true
+    },
+    {
+      "source": "/ops/man/other/wrk-9",
+      "destination": "/ops/man/other/wrk-9.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/man/system/alternatives-8",
+      "destination": "/ops/man/system/alternatives-8.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/man/system/index/",
+      "destination": "/ops/man/system/",
+      "permanent": true
+    },
+    {
+      "source": "/ops/man/system/nscd-8",
+      "destination": "/ops/man/system/nscd-8.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/man/system/useradd-8",
+      "destination": "/ops/man/system/useradd-8.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/acme-sh",
+      "destination": "/ops/nginx/acme-sh.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/add-header",
+      "destination": "/ops/nginx/add-header.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/block-request",
+      "destination": "/ops/nginx/block-request.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/block-request-use-user-agent",
+      "destination": "/ops/nginx/block-request-use-user-agent.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/cache-control",
+      "destination": "/ops/nginx/cache-control.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/cache-control-best-practice",
+      "destination": "/ops/nginx/cache-control-best-practice.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/cache-control-for-vue",
+      "destination": "/ops/nginx/cache-control-for-vue.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/compile-options",
+      "destination": "/ops/nginx/compile-options.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/compress-brotli",
+      "destination": "/ops/nginx/compress-brotli.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/compress-gzip",
+      "destination": "/ops/nginx/compress-gzip.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/cors",
+      "destination": "/ops/nginx/cors.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/cors-font-face",
+      "destination": "/ops/nginx/cors-font-face.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/deploy-co-server",
+      "destination": "/ops/nginx/deploy-co-server.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/directory-suggest",
+      "destination": "/ops/nginx/directory-suggest.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/domain-setting-use-wildcard",
+      "destination": "/ops/nginx/domain-setting-use-wildcard.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/echo",
+      "destination": "/ops/nginx/echo.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/faq",
+      "destination": "/ops/nginx/faq.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/fetch-real-ip",
+      "destination": "/ops/nginx/fetch-real-ip.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/force-lower-case-url",
+      "destination": "/ops/nginx/force-lower-case-url.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/hostname-use-www-or-not",
+      "destination": "/ops/nginx/hostname-use-www-or-not.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/http-basic",
+      "destination": "/ops/nginx/http-basic.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/http-code",
+      "destination": "/ops/nginx/http-code.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/http-concat",
+      "destination": "/ops/nginx/http-concat.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/http-index",
+      "destination": "/ops/nginx/http-index.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/http-rewrite-location",
+      "destination": "/ops/nginx/http-rewrite-location.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/http-stub-status",
+      "destination": "/ops/nginx/http-stub-status.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/https",
+      "destination": "/ops/nginx/https.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/https-nginx-set-server",
+      "destination": "/ops/nginx/https-nginx-set-server.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/index/",
+      "destination": "/ops/nginx/",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/log",
+      "destination": "/ops/nginx/log.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/logtail",
+      "destination": "/ops/nginx/logtail.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/open-resty",
+      "destination": "/ops/nginx/open-resty.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/optimize",
+      "destination": "/ops/nginx/optimize.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/primer/index/",
+      "destination": "/ops/nginx/primer/",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/primer/install-at-rocky9",
+      "destination": "/ops/nginx/primer/install-at-rocky9.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/proxy-pass",
+      "destination": "/ops/nginx/proxy-pass.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/proxy-pass-node",
+      "destination": "/ops/nginx/proxy-pass-node.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/ssl-cert-introduction",
+      "destination": "/ops/nginx/ssl-cert-introduction.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/nginx/statistics",
+      "destination": "/ops/nginx/statistics.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/of978e.html",
+      "destination": "/ops/linux/rhel/firewalld.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/sentry/index/",
+      "destination": "/ops/sentry/",
+      "permanent": true
+    },
+    {
+      "source": "/ops/sentry/install-use-docker",
+      "destination": "/ops/sentry/install-use-docker.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/sentry/sentry-disk-space-cleanup-at-pg",
+      "destination": "/ops/sentry/sentry-disk-space-cleanup-at-pg.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/ssh/index/",
+      "destination": "/ops/ssh/",
+      "permanent": true
+    },
+    {
+      "source": "/ops/ssh/login-and-deploy",
+      "destination": "/ops/ssh/login-and-deploy.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/supervisor/get-started",
+      "destination": "/ops/supervisor/get-started.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/supervisor/index/",
+      "destination": "/ops/supervisor/",
+      "permanent": true
+    },
+    {
+      "source": "/ops/supervisor/install-at-rhel",
+      "destination": "/ops/supervisor/install-at-rhel.html",
+      "permanent": true
+    },
+    {
+      "source": "/ops/supervisor/use-nginx-ui",
+      "destination": "/ops/supervisor/use-nginx-ui.html",
+      "permanent": true
+    }
+  ]
 }

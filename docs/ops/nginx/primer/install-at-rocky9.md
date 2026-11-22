@@ -58,7 +58,7 @@ $ sudo systemctl start nginx
 
 ## 第 2 步 – 调整防火墙
 
-更多内容可参考 : [Centos 7 - firewalld 常用命令](https://wulicode.com/ops/of978e.html)如果您在 [Rocky Linux 9 的初始服务器设置指南中](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-rocky-linux-9)`firewalld`启用了防火墙，则需要调整防火墙设置以允许`80`端口通过运行以下命令以永久启用端口上的 HTTP 的 `80` 端口：
+更多内容可参考 : [Centos 7 - firewalld 常用命令](https://www.wulicode.com/ops/linux/rhel/firewalld.html)如果您在 [Rocky Linux 9 的初始服务器设置指南中](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-rocky-linux-9)`firewalld`启用了防火墙，则需要调整防火墙设置以允许`80`端口通过运行以下命令以永久启用端口上的 HTTP 的 `80` 端口：
 
 ```Plaintext
 $ sudo firewall-cmd --permanent --add-service=http

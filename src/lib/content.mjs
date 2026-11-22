@@ -162,7 +162,7 @@ export function normalizeLink(href, currentId = 'index') {
   return encodeURI(pathname) + url.search + url.hash;
 }
 export function sidebarScope(id) {
-  const parts = id.split('/');
+  const parts = id.replace(/\/index$/, '').split('/');
   return ['back-end', 'front-end', 'database'].includes(parts[0]) &&
     parts.length > 1
     ? parts.slice(0, 2).join('/')

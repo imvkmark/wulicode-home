@@ -8,6 +8,7 @@
     "images:watch": "node scripts/check-images.mjs --watch",
     "test:images": "node --test scripts/check-images.test.mjs",
     "test:content": "node --test test/content.test.mjs",
+    "routes:sync": "node scripts/sync-redirects.mjs",
     "verify:build": "node scripts/verify-build.mjs",
     "check": "astro check",
     "format": "prettier --write src astro.config.mjs test scripts/verify-build.mjs"

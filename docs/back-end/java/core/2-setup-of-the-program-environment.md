@@ -84,7 +84,7 @@ JCP组织：Java Community Process
 ### 2.1.2 下载和设置 SDK
 
 ::: info 📖
-<p>扩展阅读</p><ul><li><a href="https://www.wulicode.com/back-end/java/primer/jenv-java-environment--version-manager.html">jenv - 管理当前的 Java 环境 </a></li><li><a href="https://www.wulicode.com/development/tools/sdkman.html">sdkman - 管理多个 sdk 的工具</a></li></ul>
+<p>扩展阅读</p><ul><li><a href="https://www.wulicode.com/back-end/java/primer/jenv-java-environment-version-manager.html">jenv - 管理当前的 Java 环境 </a></li><li><a href="https://www.wulicode.com/development/tools/sdkman.html">sdkman - 管理多个 sdk 的工具</a></li></ul>
 :::
 
 这里我们使用 `jenv` 和 `temurin` 来设置 sdk 和管理版本

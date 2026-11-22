@@ -129,7 +129,7 @@ tar zxvf canal.deployer-$version.tar.gz  -C /tmp/canal
 
 ### 配置
 
-`conf` 目录下的每一个文件夹便是一个单独的实例, 实例的配置文件是 `instance.properties` 配置文件位置可以查看 : [https://www.yuque.com/duoli/ops/canal-deployer](https://wulicode.com/ops/canal-deployer.html)
+`conf` 目录下的每一个文件夹便是一个单独的实例, 实例的配置文件是 `instance.properties` 配置文件位置可以查看 : [https://www.yuque.com/duoli/ops/canal-deployer](https://www.wulicode.com/ops/canal/deployer.html)
 
 ### 配置 - canal.properties
 

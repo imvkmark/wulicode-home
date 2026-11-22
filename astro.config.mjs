@@ -1,5 +1,13 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import { getPages } from './src/lib/content.mjs';
+
+// Astro's inferred dynamic routes omit the legacy .html suffix.
+const canonicalPages = new Set(
+  [...getPages().map((page) => page.url), '/articles.html'].map(
+    (url) => new URL(url, 'https://www.wulicode.com').href,
+  ),
+);
 
 export default defineConfig({
   site: 'https://www.wulicode.com',
@@ -8,7 +16,8 @@ export default defineConfig({
   build: { format: 'preserve' },
   integrations: [
     sitemap({
-      filter: (page) => !page.endsWith('/404') && !page.endsWith('/404.html'),
+      customPages: [...canonicalPages],
+      filter: (page) => canonicalPages.has(page),
     }),
   ],
   server: { host: true, port: 9900 },
